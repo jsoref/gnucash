@@ -104,7 +104,7 @@
 	* src/scm/qif-import/qif-to-gnc.scm: kill pointer-token*
 
 	* src/scm/qif-import/qif-parse.scm:
-	delete unusd gif-parse:print-acct-type
+	delete unused gif-parse:print-acct-type
 
 	* src/scm/qif-import/qif-guess-map.scm: kill pointer-token*
 
@@ -339,7 +339,7 @@
 	(kvp_value_compare): new function.
 	(kvp_frame_compare): new function.
 
-	* src/engine/kvp_frame.h: accomodate changes to kvp_frame.c.
+	* src/engine/kvp_frame.h: accommodate changes to kvp_frame.c.
 	
 	* src/engine/guid.c:
 	(guid_compare): new function.
@@ -347,12 +347,12 @@
 	(guid_hash_table_new): new function.
 	(guid_g_hash_table_equal): new function.
 
-	* src/engine/guid.h: accomodate changes to guid.c.
+	* src/engine/guid.h: accommodate changes to guid.c.
 
 	* src/engine/date.c:
 	(timespec_equal): new function.
 
-	* src/engine/date.c: accomodate changes to date.c.
+	* src/engine/date.c: accommodate changes to date.c.
 	
 	* src/engine/Transaction.c: update all functions to mark the
 	account's dirty flags when needed.
@@ -367,9 +367,9 @@
 	(xaccTransSetDocref): deleted.
 	(xaccTransGetDocref): deleted.
 
-	* src/engine/Transaction.h: accomodate changes to Transaction.c.
+	* src/engine/Transaction.h: accommodate changes to Transaction.c.
 
-	* src/engine/TransactionP.h: accomodate changes to Transaction.c.
+	* src/engine/TransactionP.h: accommodate changes to Transaction.c.
 	
 	* src/engine/Session.c:
 	(xaccSessionGetFileError): new function - migrate away from using
@@ -399,7 +399,7 @@
 	(xaccGroupMapAccounts): new function (probably going away later).
 	(xaccGroupForEachAccountDeeply): ditto.
 
-	* src/engine/Group.h: handler changes to Acccount*'s and to Group.c.
+	* src/engine/Group.h: handler changes to Account*'s and to Group.c.
 
 	* src/engine/GNCId.c:
 	(xaccGetAndResetEntityTable): new function - needed when you want
@@ -409,7 +409,7 @@
 	to load two files representing the same data for
 	comparison.
 
-	* src/engine/GNCIdP.h: accomodate changes to GNCId.c
+	* src/engine/GNCIdP.h: accommodate changes to GNCId.c
 
 	* src/engine/Account.c: many changes, removed some unused fields,
 	changed Account's to have a GList of splits rather than a NULL
@@ -443,10 +443,10 @@
 	(xaccAccountVisitUnvisitedTransactions): new function.
 	(xaccAccountForEachTransaction): new function.
 	
-	* src/engine/Account.h: changes to accomodate above changes to
+	* src/engine/Account.h: changes to accommodate above changes to
 	Account.c.
 
-	* src/engine/Account.h: changes to accomodate above changes to
+	* src/engine/Account.h: changes to accommodate above changes to
 	Account.c.
 
 	* src/engine/io-gncxml-r.c: new xml format reader.  This has a
@@ -557,7 +557,7 @@
 
 	* src/register/cellblock.c: re-implement using gtables.
 
-	* src/register/gtable.c: implentation of a dynamic 2-d array.
+	* src/register/gtable.c: implementation of a dynamic 2-d array.
 
 2000-09-13  Dave Peticolas  <dave@krondo.com>
 
@@ -621,7 +621,7 @@
 	* src/guile/option-util.c: Support for new relative-date and
 	combination options , and use of scheme getters
 	rather than direct data structure manipulation.
-	(gnc_oiption_db_lookup_date_option): modified to
+	(gnc_option_db_lookup_date_option): modified to
 	support relative and combination date options.
 	(gnc_option_date_option_get_subtype: new function.
 
@@ -720,7 +720,7 @@
 	* src/scm/main.scm (gnc:*batch-mode-forms-to-evaluate*): new
 	global to hold forms added by --evaluate for execution after
 	startup.
-	(gnc:main): support --evalutate properly.
+	(gnc:main): support --evaluate properly.
 
 	* src/scm/engine-utilities.scm (gnc:transaction-map-splits): moved
 	here.
@@ -932,7 +932,7 @@
 2000-06-20  Dave Peticolas  <dave@krondo.com>
 
 	* src/engine/util.c (xaccParseAmount): accept 8 decimal places
-	instead of 6, and trucate if more than 8.
+	instead of 6, and truncate if more than 8.
 
 	* src/gnome/dialog-add.c: make this window modeless.
 	(gnc_ui_accWindow_ok_cb): don't let the user add an account with
@@ -1101,7 +1101,7 @@
 
 2000-06-01  Rob Browning  <rlb@cs.utexas.edu>
 
-	* README: many mods to accomodate new changes, but still unfinished.
+	* README: many mods to accommodate new changes, but still unfinished.
 
 	* configure.in: --with-opt-style-install changed to
 	--enable-opt-style-install
@@ -1467,7 +1467,7 @@
 	amount using the account's currency.
 
 	* src/gnome/dialog-transfer.c (gnc_xfer_dialog_create): remove the
-	currency symobl from the dialog and use the account currency, if
+	currency symbol from the dialog and use the account currency, if
 	available, in printing amounts.
 
 	* src/gnome/window-adjust.c: remove the currency symbol from the
@@ -1496,7 +1496,7 @@
 
 	* src/scm/prefs.scm: convert the gui options to internal options.
 
-	* src/scm/options.scm: add an interal option type with no frills.
+	* src/scm/options.scm: add an internal option type with no frills.
 
 	* src/engine/util.c (xaccSPrintAmount): add a space after the
 	currency code to make the currency symbol.
@@ -1807,7 +1807,7 @@
 	* src/SplitLedger.c: more cleanup. Fix a bug in refreshing a register
 	in auto-mode where the current transaction has been deleted.
 
-	* src/scm/report/balance-and-pnl.scm: put sub-accouts below their
+	* src/scm/report/balance-and-pnl.scm: put sub-accounts below their
 	parent accounts and indent their names. Align the columns better.
 	Print fully-qualified names.
 
@@ -1871,7 +1871,7 @@
  	* doc/build-system: new file - should eventually cover
  	build-system info and justifications.
 
- 	* configure.in: changes to accomodate the new GNC_EXPANDED_*
+ 	* configure.in: changes to accommodate the new GNC_EXPANDED_*
  	vars.  See doc/build-system for a summary.
 
  	* Makefile.init.in (ABSOLUTE_TOP_SRCDIR): set
@@ -2393,7 +2393,7 @@
 2000-02-27  Dave Peticolas  <peticola@cs.ucdavis.edu>
 
 	* src/gnome/dialog-transfer.c (gnc_xfer_dialog_create): use
- 	gnc_localconv to get the currency symbol.
+ 	gnc_localeconv to get the currency symbol.
 
 	* src/gnome/window-adjust.c (adjBWindow): put colons after label.
   	Use gnc_localeconv to get the currency symbol.
@@ -2414,7 +2414,7 @@
 
 	* src/register/splitreg.h (struct _SplitRegisterColors): add color
  	for odd rows in single mode, and boolean argument determining
- 	whether to alterative virtual or physical rows in double mode.
+ 	whether to alternate virtual or physical rows in double mode.
 
 2000-02-25  Dave Peticolas  <peticola@cs.ucdavis.edu>
 
@@ -2522,7 +2522,7 @@
  	too. Ditto for the popup menu and the toolbar.
 
 	* Makefile.in: reversed order of gnucash linking so gnucash.gnome
-	gets linked last, so it overides the motif version. Also, install
+	gets linked last, so it overrides the motif version. Also, install
 	the gnucash.desktop entry so gnucash appears in the gnome panel.
 
 	* src/register/splitreg.c: right-align the xfer cells
@@ -2800,7 +2800,7 @@
  	option for printing share quantities.
 
 	* src/engine/Session.c (MakeHomeDir): just because ~/.gnucash
- 	exists doens't mean ~/.gnucash/data exists.
+ 	exists doesn't mean ~/.gnucash/data exists.
 
 	* src/scm/report/hello-world.scm: renamed from dummy.scm. Added
 	documentation to the source code and additional help text in the
@@ -2921,7 +2921,7 @@
 
 	* src/scm/report.scm: Change reports so that they have a function
  	which generates a new set of options. Change the report running
- 	functions to accomodate this.
+ 	functions to accommodate this.
 
 	* src/FileDialog.c: avoid showing multiple error dialogs.
 
@@ -3065,14 +3065,14 @@
  	update. change entry widget appropriately.
 
 	* src/register/table-allgui.c (gnc_table_enter_update): added args
- 	to set cursor position and highlited selection.
+ 	to set cursor position and highlighted selection.
 
 	* src/scm/prefs.scm (gnc:save-options): truncate the options file
  	when opening.
 
 	* src/register/gnome/gnucash-item-edit.c (item_edit_draw_info):
- 	calc regions for the highlited portion of the text.
-	(item_edit_draw): draw the hightlited portion of the text.
+ 	calc regions for the highlighted portion of the text.
+	(item_edit_draw): draw the highlighted portion of the text.
 
 2000-01-19  Dave Peticolas  <peticola@cs.ucdavis.edu>
 
@@ -3119,7 +3119,7 @@
 	(accWindow): remember window size and recreate it.
 
 	* src/engine/util.c (xaccParseQIFAmount): rename this from
-	xaccParseUSAmount to explictly reflect its only usage. Modify
+	xaccParseUSAmount to explicitly reflect its only usage. Modify
 	the parsing to guess what symbol is used as a decimal point.
 
 2000-01-15  Dave Peticolas  <peticola@cs.ucdavis.edu>

@@ -26,7 +26,7 @@
 1999-12-29  Peter Pointner  <peter@wuzel.m.isar.de>
 
 	* src/motif/FileBox.c (closeBoxCB): reset fileName only if !done.
-	  This fixes the FileBox problems with lesstiff 0.89.1, at least
+	  This fixes the FileBox problems with lesstif 0.89.1, at least
 	  for me.
 
 	* configure.in: change CPPFLAGS used to search for gtk-xmhtml  
@@ -128,7 +128,7 @@
 	* src/MultiLedger.c (xaccRegisterRefreshAllGUI): new function.
 	call gui refresh on all registers.
 
-	* src/MultiLedger.h: remove unecessary externs.
+	* src/MultiLedger.h: remove unneccessary externs.
 
 1999-12-19  Heath Martin  <martinh@pegasus.cc.ucf.edu>
 
@@ -177,7 +177,7 @@
 1999-12-18  Dave Peticolas  <peticola@cs.ucdavis.edu>
 
 	* src/gnome/window-register.c (gnc_register_create_tool_bar):
- 	Don't cause a legister refresh.
+ 	Don't cause a register refresh.
 
 1999-12-17  Dave Peticolas  <peticola@cs.ucdavis.edu>
 
@@ -600,7 +600,7 @@
 	the list signals.
 
 	* src/SplitLedger.c (LedgerMoveCursor): update cursor_phys_row and
- 	cursor_virt_row in the SplitRegiter.
+ 	cursor_virt_row in the SplitRegister.
 	(xaccSRDeleteCurrentSplit): new function. delete the current split
  	in the register.
 	(xaccSRCountRows): don't move the saved physical and virtual rows
@@ -690,7 +690,7 @@
 
 	* src/register/splitreg.c (configLayout): configure the single
  	cursor last so the header is the most reasonable. This is a
- 	hack. Eventually, we should probably switch headers dyamically.
+ 	hack. Eventually, we should probably switch headers dynamically.
 
 	* src/register/gnome/gnucash-sheet.c
  	(gnucash_register_goto_virt_row_col): replaces and generalizes
@@ -798,11 +798,11 @@
 1999-11-20  Dave Peticolas  <peticola@cs.ucdavis.edu>
 
         * src/register/gnome/ChangeLog: we're going to stop using this
-	changlog file and put all changes in the top-level ChangLog file.
+	changelog file and put all changes in the top-level ChangeLog file.
 
 	* src/gnome/reconcile-list.[ch]: Use a hash table to remember
 	reconcile flags after a refresh. Also remember scroll position.
-	Change row styles so active row isn't highlited.
+	Change row styles so active row isn't highlighted.
 
 	* src/register/gnome/gnucash-sheet.c:
  	(gnucash_button_press_event): For now, we need to enter the cell,

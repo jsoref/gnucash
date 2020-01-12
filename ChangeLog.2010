@@ -12,7 +12,7 @@
 	  patch adds an additional update action to the import matcher as
 	  described above. It can be activated with the online banking
 	  preferences dialog. (Patch changed because of one function name
-	  adaption after r19936)
+	  adaptation after r19936)
 
 2010-12-31 18:25  plongstaff
 
@@ -702,7 +702,7 @@
 	* [r19922] optional, optional/python-bindings,
 	  optional/python-bindings/example_scripts,
 	  optional/python-bindings/example_scripts/price_database_example.py:
-	  New example script for prices dababase. Thanks to Christoph
+	  New example script for prices database. Thanks to Christoph
 	  Holtermann for contributing to this.
 
 2010-12-10 10:25  cstim
@@ -865,7 +865,7 @@
 	  crashes out when trying to save-as MySQL Disclaimer: This fix
 	  attempt is purely based on the information given in the bug
 	  report and code reading. I never could reproduce this bug but
-	  the code suggests an unitialized pointer may be the the cause.
+	  the code suggests an uninitialized pointer may be the the cause.
 
 2010-11-29 18:46  cmarchi
 
@@ -1179,7 +1179,7 @@
 
 	* [r19808] src/optional/python-bindings/gnucash_core.py: Bug
 	  #634812: Improve backend error reporting for Session begin Patch
-	  by Mike E: The current error feedback to a python scrpt/user
+	  by Mike E: The current error feedback to a python script/user
 	  looks something like: call to begin resulted in the following
 	  errors, (7,) This change in gnucash_core.py makes the feedback
 	  similar to: call to begin resulted in the following errors,
@@ -1264,7 +1264,7 @@
 	  sql backends, locking creates the database... which then would
 	  return may_clobber as true, even though it really wasn't. New
 	  parameter "force" added to session_begin() functions, and
-	  "create_if_nonexistant" is renamed to simply "create". The
+	  "create_if_nonexistent" is renamed to simply "create". The
 	  reason for the latter is that the file/database is created
 	  regardless of whether it already exists; that's what the clobber
 	  check is about. The new "force" parameter is set to true the
@@ -1332,7 +1332,7 @@
 
 	* [r19781] src/gnome-utils/gnc-file.c: Bug #634252: Re-enable the
 	  splash screen if the user selects open anyway If during startup
-	  a file or database turns out to beeing locked the user is
+	  a file or database turns out to being locked the user is
 	  presented a dialog with the options to open anyway, create a new
 	  file or abort. This dialog, however, closes the splash screen.
 	  This may cause confusion, because file loading and report
@@ -1439,7 +1439,7 @@
 	  src/backend/xml/test/test-files/xml2/conrads-file.gml2,
 	  src/backend/xml/test/test-files/xml2/every.gml2,
 	  src/backend/xml/test/test-files/xml2/goonies-file.gml2,
-	  src/backend/xml/test/test-files/xml2/hierachical-data-file.gml2,
+	  src/backend/xml/test/test-files/xml2/hierarchical-data-file.gml2,
 	  src/backend/xml/test/test-files/xml2/ms-money.gml2,
 	  src/backend/xml/test/test-files/xml2/pricedb1.gml2: Updated test
 	  files complying with the xml schema as of 2011-11-02
@@ -1615,7 +1615,7 @@
 	  src/register/ledger-core/split-register-model-save.c,
 	  src/register/ledger-core/split-register-model.c,
 	  src/register/ledger-core/split-register.c,
-	  src/register/register-core/pricecell.c: Bug #502853 - Incorrent
+	  src/register/register-core/pricecell.c: Bug #502853 - Incorrect
 	  tax rounding in invoice (rounding of .5) This patch changes the
 	  default rounding behaviour in GnuCash from "Round to nearest
 	  even" to "Round away to infinity". See the bugreport for more
@@ -1800,7 +1800,7 @@
 2010-10-14 21:00  gjanssens
 
 	* [r19657] src/app-utils/gnc-ui-util.c: Rework two nearly
-	  identical fuctions into a common function with parameters. Keep
+	  identical functions into a common function with parameters. Keep
 	  the old function names as convenience wrappers around the new
 	  function.
 
@@ -1935,7 +1935,7 @@
 	  1) as the string to search. However, when looking at the main
 	  account file, strlen(name) == pathlen, so strptime is looking at
 	  the point just past the end of name. Sometimes this will be
-	  parseable by strptime, and this leads to the account file being
+	  parsable by strptime, and this leads to the account file being
 	  unlinked.
 
 2010-10-04 15:40  gjanssens
@@ -2778,7 +2778,7 @@
 	  src/register/ledger-core/split-register-model.c,
 	  src/register/ledger-core/split-register.c,
 	  src/register/register-core/pricecell.c: Refactoring: replace all
-	  GNC_RND_* and GNC_DENOM_* occurences with their GNC_HOW_RND_*
+	  GNC_RND_* and GNC_DENOM_* occurrences with their GNC_HOW_RND_*
 	  and GNC_HOW_DENOM_* equivalents And then remove the deprecated
 	  definitions.
 
@@ -2854,7 +2854,7 @@
 	  src/engine/SchedXaction.c, src/engine/SchedXaction.h,
 	  src/engine/test-core/test-engine-stuff.c,
 	  src/engine/test-core/test-engine-stuff.h: And more
-	  const-correctnes in SchedXaction.h
+	  const-correctness in SchedXaction.h
 
 2010-08-21 23:52  jralls
 
@@ -2875,7 +2875,7 @@
 	  src/gnome-utils/gnc-frequency.h,
 	  src/gnome-utils/gnc-sx-list-tree-model-adapter.c,
 	  src/gnome/dialog-sx-editor.c,
-	  src/gnome/dialog-sx-since-last-run.c: Impove const-correctness
+	  src/gnome/dialog-sx-since-last-run.c: Improve const-correctness
 	  of SchedXaction.h functions; improve documentation. Also,
 	  replace "void *" by pointers to the actual type.
 
@@ -2935,7 +2935,7 @@
 
 	* [r19446] configure.ac, src/import-export/aqbanking/Makefile.am,
 	  src/import-export/aqbanking/gnc-gwen-gui.c: Add lookup of linker
-	  flags of libgwenhyfar-gui-gtk2. It is still disabled until more
+	  flags of libgwenhywfar-gui-gtk2. It is still disabled until more
 	  testing has been done, though.
 
 2010-08-17 21:05  cstim
@@ -3046,7 +3046,7 @@
 	  tmp: invoice = gnucash.gnucash_business.Invoice(instance=tmp)
 	  Use the invoice object as in
 	  sample_scripts/simple_invoice_insert.py I support this patch,
-	  but I've made a few improvments of my own. I switched up the
+	  but I've made a few improvements of my own. I switched up the
 	  arguments in search_customer_on_id, search_invoice_on_id,
 	  search_bill_on_id to have Book first and ID second. The reason
 	  for this was to make these functions more consistent with the
@@ -3054,7 +3054,7 @@
 	  particular attribute. Also added some specific python bindings
 	  support to allow this to be used as methods of Book:
 	  Book.CustomerLookupByID, Book.InvoiceLookupByID,
-	  Book.BillLoookupByID.
+	  Book.BillLookupByID.
 	* [r19430] src/report/report-system/eguile-gnc.scm: Bug #624721:
 	  Show backtrace for errors in eguile templates Patch by Matthijs
 	  Kooijman: The current eguile template implementation catches
@@ -3650,14 +3650,14 @@
 2010-07-08 19:16  gjanssens
 
 	* [r19349] src/gnome-utils/dialog-account.c,
-	  src/gnome-utils/gnc-main-window.c: Bug #623842 - Reseting of
+	  src/gnome-utils/gnc-main-window.c: Bug #623842 - Resetting of
 	  Color Tabs to default color wrong.
 
 2010-07-07 15:11  gjanssens
 
 	* [r19348] src/app-utils/date-utilities.scm: Bug #556713 -
 	  inconsistency in report options, partial fix This commit aligns
-	  all occurences of "Current/Previous Year Start/End" to
+	  all occurrences of "Current/Previous Year Start/End" to
 	  "Start/End of this year"
 
 2010-07-06 16:52  gjanssens
@@ -3671,7 +3671,7 @@
 	  src/report/standard-reports/transaction.scm,
 	  src/report/standard-reports/trial-balance.scm: Bug #556713 -
 	  inconsistency in report options, partial fix This commit aligns
-	  all occurences of "Report Accounts" and "Accounts to include" to
+	  all occurrences of "Report Accounts" and "Accounts to include" to
 	  "Accounts"
 
 2010-07-06 16:47  cmarchi
@@ -3808,7 +3808,7 @@
 	  src/report/standard-reports/portfolio.scm,
 	  src/report/standard-reports/transaction.scm: Bug #556713 -
 	  inconsistency in report options, partial fix This commit aligns
-	  all occurences of "Report Currency" and variants to "Report's
+	  all occurrences of "Report Currency" and variants to "Report's
 	  currency"
 
 2010-07-03 14:36  gjanssens
@@ -4039,7 +4039,7 @@
 
 	* [r19293] src/optional/python-bindings/Makefile.am,
 	  src/optional/python-bindings/gnucash_core.i: Bug #622520 -
-	  gnucash business objects disapear on save, patch by Mark Jenkins
+	  gnucash business objects disappear on save, patch by Mark Jenkins
 
 2010-06-25 09:44  gjanssens
 
@@ -4223,7 +4223,7 @@
 	  src/bin/gnucash.in: Finish direct binary execution on Windows
 	  and linux and cleanup bin Makefile/targets - Windows * binary
 	  name becomes GnuCash.exe * gnucash.cmd is renamed to
-	  gnucash-launcer.cmd (consistent with OS X). This file is only
+	  gnucash-launcher.cmd (consistent with OS X). This file is only
 	  needed to run GnuCash straight from the source installation. It
 	  is not used (or distributed) with the Windows Installer version.
 	  * gnucash-valgrind, gnucash-gdb and the override extra's have
@@ -4390,7 +4390,7 @@
 
 2010-06-07 21:45  jralls
 
-	* [r19238] src/bin/gnucash-bin.c: Disable enviroment_overide()
+	* [r19238] src/bin/gnucash-bin.c: Disable environment_override()
 	  when MAC_INTEGRATION is defined: It doesn't play well with App
 	  Bundles.
 
@@ -5050,7 +5050,7 @@
 	  generate-restore-form does not rely on "hack" in setter that
 	  previously allowed either a budget object or a GUID string This
 	  is a different fix for 603215 -- see Known Issues * Provide
-	  translation support for "Trading Acccounts" (and "Budgeting") *
+	  translation support for "Trading Accounts" (and "Budgeting") *
 	  Refactor #define names for consistency and extensibility *
 	  KVP_OPTION_PATH for consistency with Guile usage *
 	  OPTION_SECTION_blahblah * OPTION_NAME_blahblah * Modify
@@ -5072,7 +5072,7 @@
 2010-05-06 08:36  cstim
 
 	* [r19122] src/import-export/csv/gnc-csv-model.c: Bug #586805: Fix
-	  errorneous abs() in csv import Changes abs function to fabs in
+	  erroneous abs() in csv import Changes abs function to fabs in
 	  gnc-csv-model.c, to allow csv imports of values less than $1.00.
 	  Patch by James Raehl.
 
@@ -5083,13 +5083,13 @@
 	  iso-4217-currencies Patch by Frank H. Ellenberger 1. improve the
 	  header of fieldnames with annotations 2. sort by ISO code,
 	  because a. easier for non english people b. most tables in the
-	  internet have this sort order. So maintainance becomes easier.
+	  internet have this sort order. So maintenance becomes easier.
 	  3. inserting a Column local_symbol, because some people like to
 	  use it, e.g.
 	  https://bugs.gnucash.org/show_bug.cgi?id=492417#c3 But
 	  probably there is a better way to get this informations. 4.
 	  Review List: a. adding: CDF, GHS, ... b. outdated:
-	  AON->AOR->AOA, GWP->XOF, ... c. Typos like "fening". d. Alway
+	  AON->AOR->AOA, GWP->XOF, ... c. Typos like "fening". d. Always
 	  use singular instead of a mixture. 5. add comments: a. outdated
 	  currencies prepared as in the header shown. b. for
 	  abbreviations. Background is the thread starting with
@@ -5480,11 +5480,11 @@
 	  patch reverses that decision.
 	* [r19059] src/engine/gnc-commodity.c: Bug #615912: Update
 	  gnc_quote_source from FQ 1.11 to 1.17 and enhance user_name
-	  Patch by Frank H. Ellenberger. Because many sources were listet
+	  Patch by Frank H. Ellenberger. Because many sources were listed
 	  as unknown, I tried to sort them in. Because normal users don't
 	  know all englisch abbreviations of far continents, I tried to
 	  use better understandable descriptions and added country codes.
-	  Caveeats: 1. The HU methods were not quite clear to me, so I
+	  Caveats: 1. The HU methods were not quite clear to me, so I
 	  added only one. 2. The Currencies methods seems to fetch lists
 	  of currencies, something what we don't need here; correct me, if
 	  I am wrong.
@@ -7856,7 +7856,7 @@
 
 	* [r18944] src/business/dialog-tax-table/tax-tables.glade: I18n:
 	  Mark forgotten string for translation. Pointed out by Yasuaki
-	  Taniguch.
+	  Taniguchi.
 
 2010-03-21 19:43  cstim
 
@@ -8114,13 +8114,13 @@
 
 	* [r18907] src/app-utils/file-utils.c, src/app-utils/guile-util.c,
 	  src/calculation/fin.c, src/libqof/qof/qofid.h: MSVC
-	  compatiblity: Fix include files in MSVC. Replace QSTRCMP by
+	  compatibility: Fix include files in MSVC. Replace QSTRCMP by
 	  g_strcmp0 on MSVC.
 
 2010-03-14 21:01  cstim
 
 	* [r18906] src/app-utils/gnc-ui-common.h,
-	  src/app-utils/option-util.c: Improve non-gnome UI compatiblity:
+	  src/app-utils/option-util.c: Improve non-gnome UI compatibility:
 	  app-utils can compile without gtk as well.
 	* [r18905] CMakeLists.txt, packaging/win32/install.sh,
 	  src/CMakeLists.txt, src/app-utils/CMakeLists.txt,
@@ -8250,7 +8250,7 @@
 	  splits), or a scan is not needed (references from splits to an
 	  account can be determined using xaccAccountGetSplitList()). This
 	  routine can do a scan by calling
-	  qof_instnace_get_referring_object_list_from_collection(). Normal
+	  qof_instance_get_referring_object_list_from_collection(). Normal
 	  routine: qof_instance_get_referring_object_list(QofInstance* A)
 	  - For all collections in the book, gets an instance and calls
 	  its qof_instance_get_typed_referring_object_list() routine,
@@ -8375,7 +8375,7 @@
 
 	* [r18876] src/CMakeLists.txt, src/engine/CMakeLists.txt,
 	  src/engine/gnc-euro.c, src/engine/gnc-ui-util.c: Win32/MSVC
-	  compatiblity - Replace trunc() by floor() - Provide a round()
+	  compatibility - Replace trunc() by floor() - Provide a round()
 	  workaround implementation for MSVC - Use g_strcasecmp instead of
 	  the libc one - Add include for libc replacements
 	* [r18875] src/gnc/gtk-icons.qrc, src/gnc/gtk-icons/gtk-redo.png,
@@ -8408,7 +8408,7 @@
 2010-03-07 21:02  gjanssens
 
 	* [r18870] po/POTFILES.in: Update POTFILES.in for the moved
-	  dialog-userpass.c and the newely added gnc-jalali.c
+	  dialog-userpass.c and the newly added gnc-jalali.c
 
 2010-03-07 20:30  cstim
 
@@ -8457,7 +8457,7 @@
 2010-03-07 13:06  cstim
 
 	* [r18864] packaging/win32/install.sh,
-	  src/business/business-core/business-core.i: MSVC compatiblity:
+	  src/business/business-core/business-core.i: MSVC compatibility:
 	  snprintf is required to have a prefixing underscore. Also, more
 	  symbols of libguile/gc.h need explicit declspec on MSVC.
 
@@ -8562,7 +8562,7 @@
 	  src/business/business-core/gncOrder.h,
 	  src/business/business-core/gncTaxTable.h,
 	  src/business/business-core/gncVendor.h,
-	  src/libqof/qof/qofbook.h: MSVC compatiblity: Replace
+	  src/libqof/qof/qofbook.h: MSVC compatibility: Replace
 	  QOF_BOOK_LOOKUP_ENTITY macro by a RETURN_ENTITY macro and add
 	  inline functions for lookup. MSVC doesn't accept the syntax with
 	  an inlined block, x = ({ foo; bar; value;}). Hence, this is
@@ -8663,7 +8663,7 @@
 	  been renamed to gnc_resolve_file_path to be more consistent with
 	  the other functions. Lastly, this commit also adds a first
 	  implementation to work with a keyring to store and retrieve
-	  passwords, althoug
+	  passwords, although...
 
 2010-03-05 19:57  cstim
 
@@ -9628,17 +9628,17 @@
 	  the workaround to define a macro that will shadow the member
 	  names. However, the initialization itself works fine and
 	  non-MSVC code is unchanged, so I think we can live with that.
-	* [r18754] src/engine/Account.c: MSVC compatiblity: Struct
+	* [r18754] src/engine/Account.c: MSVC compatibility: Struct
 	  initialization doesn't work as expected. Somehow, the struct
 	  initialization containing a gnc_numeric doesn't work. As an
 	  exception, we hand-initialize that member afterwards.
 	* [r18753] src/backend/xml/gnc-backend-xml.c,
-	  src/engine/gnc-filepath-utils.c: MSVC compatiblity: open() flags
+	  src/engine/gnc-filepath-utils.c: MSVC compatibility: open() flags
 	  and S_ISDIR doesn't exist on MSVC.
 
 2010-02-27 18:40  cstim
 
-	* [r18752] src/backend/xml/io-gncxml-v1.c: MSVC compatiblity: Use
+	* [r18752] src/backend/xml/io-gncxml-v1.c: MSVC compatibility: Use
 	  a char* pointer for the memcpy() input argument. This is
 	  required by MSVC because we do some pointer arithmetic in the
 	  memcpy() argument, but in order to do this, MSVC wants to know
@@ -9649,11 +9649,11 @@
 	  bytes are counted.
 	* [r18751] src/backend/xml/sixtp.c,
 	  src/engine/gnc-filepath-utils.c, src/libqof/qof/gnc-numeric.c,
-	  src/libqof/qof/kvp_frame.c: MSVC compatiblity: Add defines for
+	  src/libqof/qof/kvp_frame.c: MSVC compatibility: Add defines for
 	  functions/types which are available under different names in
 	  MSVC.
 	* [r18750] src/backend/xml/gnc-backend-xml.c,
-	  src/engine/Recurrence.c: MSVC compatiblity: Array initialization
+	  src/engine/Recurrence.c: MSVC compatibility: Array initialization
 	  in MSVC requires a constant, not a variable. That is, gcc
 	  accepts a constant variable in many cases now, but MSVC doesn't
 	  accept it. So it must be turned into an old preprocessor define.
@@ -9997,7 +9997,7 @@
 	  register window, (3) include scroll offset patch (id=153514),
 	  (4) include preedit string rollback patch (id=153518), (5) fix
 	  formula and account cells input problem which Christian pointed
-	  out, (6) surpress quick-fill when preedit string exists, (7) fix
+	  out, (6) suppress quick-fill when preedit string exists, (7) fix
 	  Windows IME problem. (8) Fix quick-fill problem.
 
 2010-02-23 20:28  cstim
@@ -10104,10 +10104,10 @@
 	  build. (gnc_build_data_path): New function, just a copy of
 	  gnc_build_book_path. Needed for rewrite of xaccResolveFilePath.
 	  (xaccResolveFilePath): Cleaned out the hard-coded paths and
-	  weird file path contruction functions and rewrote the function
+	  weird file path construction functions and rewrote the function
 	  to use gnc_path_get_foo and gnc_build_data_path without all of
 	  the silly indirection. Removed superfluous URI checks (which are
-	  correctly perfomed by xaccResolveURL()). (MakeHomeDir,
+	  correctly performed by xaccResolveURL()). (MakeHomeDir,
 	  xaccPathGenerator, xaccDataPathGenerator)
 	  (xaccUserPathGenerator): Deleted; their functionality is
 	  replaced as noted above. (check_file_return_if_true): Renamed
@@ -10820,7 +10820,7 @@
 	  The account name of the other account in multi-split transaction
 	  is extended to conform to the name in the register. Otherwise,
 	  the string Split from here has the ambiguity with the button
-	  labeles Split, which is the verb, whereas here we need the noun.
+	  labels Split, which is the verb, whereas here we need the noun.
 
 2010-02-05 20:29  cstim
 
@@ -11095,7 +11095,7 @@
 	  on top and which has two stubs below. There are other voucher
 	  formats ( middle and bottom ) , but the check printing
 	  functionality would require separate templates for the different
-	  formats. Also changed the Quicken/Quickbooks US-Letter check
+	  formats. Also changed the Quicken/QuickBooks US-Letter check
 	  format to include the ADDRESS check item and blocking around the
 	  AMOUNT_NUMBER field. I made a change to the Quicken-wallet check
 	  to add blocking characters around the AMOUNT_NUMBER field, and I
@@ -11213,7 +11213,7 @@
 
 2010-01-12 19:40  gjanssens
 
-	* [r18564] src/gnome/glade/acctperiod.glade: Fix typo: accouting
+	* [r18564] src/gnome/glade/acctperiod.glade: Fix typo: accounting
 	  -> accounting
 
 2010-01-12 18:08  gjanssens
@@ -11337,7 +11337,7 @@
 	  src/core-utils/Makefile.am, src/core-utils/core-utils.i,
 	  src/engine/engine.i, src/engine/gnc-hooks.c, src/gnc-ui.h,
 	  src/gnome/gnome.i, src/guile-mappings.h: Fix guile-1.6
-	  compatibility of r18541 (bug#582325). We still suppport
+	  compatibility of r18541 (bug#582325). We still support
 	  guile-1.6, hence we can use the functions introduced in
 	  guile-1.8 only by providing our own backward compatibility macro
 	  definitions in guile-mappings.h.

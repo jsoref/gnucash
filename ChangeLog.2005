@@ -160,7 +160,7 @@ r12228 | chris | 2005-12-31 17:28:42 -0500 (Sat, 31 Dec 2005) | 2 lines
 	  Single-pass audit/cleanup of Account.c
 
 	  - standardize on 'acc' as variable name for Account. 
-	  - removed 'acc->inst.dirty = TRUE' when preceeded by mark_account. 
+	  - removed 'acc->inst.dirty = TRUE' when preceded by mark_account. 
 	  - slightly more consistent whitespace. 
 	  - short-circuit no-op in many cases where we thought we were
 	  changing state but we really weren't. Don't dirty Accounts in
@@ -459,7 +459,7 @@ r12228 | chris | 2005-12-31 17:28:42 -0500 (Sat, 31 Dec 2005) | 2 lines
 	* GNOME2_STATUS: remove GOG-porting notes, spelling fixes.
 	
 	* sched-xact.glade: 
-	* apps_gnucash_dialog_scheduled_transctions.schemas: 
+	* apps_gnucash_dialog_scheduled_transactions.schemas: 
 	* dialog-scheduledxaction.c (schedXact_editor_create_ledger):
 	Remove the not-really-respected-anyways option to change the
 	number of register lines in the SX editor dialog.
@@ -735,10 +735,10 @@ r12228 | chris | 2005-12-31 17:28:42 -0500 (Sat, 31 Dec 2005) | 2 lines
 
 2005-11-22  Christian Stimming  <stimming@tuhh.de>
 
-	* po/nb.po: Updated Norwegian (bokmaal) translation by Tor Harald
+	* po/nb.po: Updated Norwegian (bokmal) translation by Tor Harald
 	Thorland <linux@strigen.com>.
 
-	* po/glossary/nb.po: New filename for Norwegian (bokmaal) glossary
+	* po/glossary/nb.po: New filename for Norwegian (bokmal) glossary
 	-- it used to be stored under no.po but that is no longer.
 
 2005-11-21  David Hampton  <hampton@employees.org>
@@ -1001,7 +1001,7 @@ r12228 | chris | 2005-12-31 17:28:42 -0500 (Sat, 31 Dec 2005) | 2 lines
 
 2005-11-20  Christian Stimming  <stimming@tuhh.de>
 
-	* po/glossary/no.po: Updated Norwegian/Bokmaal glossary
+	* po/glossary/no.po: Updated Norwegian/Bokmal glossary
 	translation by Tor Harald Thorland <linux@strigen.com>.
 
 2005-11-20  Neil Williams  <linux@codehelp.co.uk>
@@ -1229,7 +1229,7 @@ r12228 | chris | 2005-12-31 17:28:42 -0500 (Sat, 31 Dec 2005) | 2 lines
 
 2005-11-13  Neil Williams <linux@codehelp.co.uk>
 
-	* make-gncuash-potfiles.in : Add a specific
+	* make-gnucash-potfiles.in : Add a specific
 	call to read one libqof file.
 	* po/POTFILES.in : the updated POTFILES list.
 
@@ -1452,7 +1452,7 @@ r12228 | chris | 2005-12-31 17:28:42 -0500 (Sat, 31 Dec 2005) | 2 lines
 	* src/register/register-gnome/gnucash-item-edit.[ch]: This patch
 	simplifies the mouse selection logic in gnucash-item-edit.  It
 	also fixes a problem where selection with the mouse does not work
-	correctly if you start draging in one direction, then drag back
+	correctly if you start dragging in one direction, then drag back
 	over the original start point.
 
 2005-11-09  Christian Stimming  <stimming@tuhh.de>
@@ -1503,7 +1503,7 @@ r12228 | chris | 2005-12-31 17:28:42 -0500 (Sat, 31 Dec 2005) | 2 lines
 
 2005-11-06  Christian Stimming  <stimming@tuhh.de>
 
-	* autogen.sh: Revert autogen.sh simplificatoin for now; to be
+	* autogen.sh: Revert autogen.sh simplification for now; to be
 	reconsidered after more testing.
 
 2005-11-06  Neil Williams <linux@codehelp.co.uk>
@@ -1678,7 +1678,7 @@ r12228 | chris | 2005-12-31 17:28:42 -0500 (Sat, 31 Dec 2005) | 2 lines
 	* GNOME2_STATUS: Updates
 	* src/gnome-utils/gnc-dense-cal.c (gnc_dense_cal_button_press):
 	Better transient-window positioning.
-	* src/gnome/schemas/apps_gnucash_dialog_scheduled_transctions.schemas:
+	* src/gnome/schemas/apps_gnucash_dialog_scheduled_transactions.schemas:
 	* src/gnome/dialog-scheduledxaction.[ch]: 
 	* src/gnome/dialog-sx-from-trans.c: 
 	Rename "notify-days" to "remind-days", as it should have been in
@@ -2257,7 +2257,7 @@ r12228 | chris | 2005-12-31 17:28:42 -0500 (Sat, 31 Dec 2005) | 2 lines
 	* src/backend/file/test/test-files/xml2/conrads-file.gml2
 	* src/backend/file/test/test-files/xml2/every.gml2
 	* src/backend/file/test/test-files/xml2/goonies-file.gml2
-	* src/backend/file/test/test-files/xml2/hierachical-data-file.gml2
+	* src/backend/file/test/test-files/xml2/hierarchical-data-file.gml2
 	* src/backend/file/test/test-files/xml2/ms-money.gml2
 	* src/backend/file/test/test-files/xml2/pricedb1.gml2
 
@@ -2470,7 +2470,7 @@ r12228 | chris | 2005-12-31 17:28:42 -0500 (Sat, 31 Dec 2005) | 2 lines
 
 2005-10-08  Christian Stimming  <stimming@tuhh.de>
 
-	* src/import-export/ofx/gnc-ofx-import.c: Fix errornerous
+	* src/import-export/ofx/gnc-ofx-import.c: Fix erroneous
 	double-free at OFX import.
 
 2005-10-07  Joshua Sled  <jsled@asynchronous.org>
@@ -3089,7 +3089,7 @@ r12228 | chris | 2005-12-31 17:28:42 -0500 (Sat, 31 Dec 2005) | 2 lines
 	  not defined in any included header).
 
 2005-08-22  Josh Sled <jsled@asynchronous.org>
-	* lib/goffice/: Conditionallize #warnings used as TODO tracking
+	* lib/goffice/: Conditionalize #warnings used as TODO tracking
 	from "goffice" import.  Fix compiler warnings.  lib/goffice/
 	should now build with -Werror.  As such, remove -Werror removal
 	from .mk files.
@@ -3469,7 +3469,7 @@ r12228 | chris | 2005-12-31 17:28:42 -0500 (Sat, 31 Dec 2005) | 2 lines
 	* src/gnome/gw-gnc-spec.scm:
 	* src/gnome/top-level.c:
 	* src/gnome/glade/sched-xact.glade:
-	* src/gnome/schemas/apps_gnucash_dialog_scheduled_transctions.schemas:
+	* src/gnome/schemas/apps_gnucash_dialog_scheduled_transactions.schemas:
 	* src/gnome/ui/gnc-plugin-page-sxregister-ui.xml:
 	* src/gnome/ui/gnc-sxed-window-ui.xml:
 	* src/scm/main.scm: Convert scheduled transactions over to the new
@@ -4021,7 +4021,7 @@ r12228 | chris | 2005-12-31 17:28:42 -0500 (Sat, 31 Dec 2005) | 2 lines
 	* qofid.h: qof_collection_count
 
 2005-06-19  Neil Williams <linux@codehelp.co.uk>
-	* src/engine/qof_book_merge.c: Re-organising to
+	* src/engine/qof_book_merge.c: Re-organizing to
 	use static functions.
 	* src/engine/qof_book_merge.h: Setting public API.
 	* src/engine/qofclass.h: Typos.
@@ -4346,10 +4346,10 @@ r12228 | chris | 2005-12-31 17:28:42 -0500 (Sat, 31 Dec 2005) | 2 lines
 	against being called after window destruction has started.
 
 	* src/gnome/glade/lots.glade:
-	* src/gnome/lot-viewer.c: Make the dialog more HIG compliate.
+	* src/gnome/lot-viewer.c: Make the dialog more HIG compliant.
 	Install the callbacks via glade instead of by hand.  Rework some
 	of the callback logic.  The buttons that require a lot be selected
-	now cannot be clicked unless a lot is selected.  Rememver window
+	now cannot be clicked unless a lot is selected.  Remember window
 	and divider information in gconf.
 
 2005-05-21  David Hampton  <hampton@employees.org>
@@ -4764,7 +4764,7 @@ r12228 | chris | 2005-12-31 17:28:42 -0500 (Sat, 31 Dec 2005) | 2 lines
 	* src/business/business-gnome/gnc-plugin-business.c:
 	Adding show_session_error support to inform the user of
 	any write errors reported by QSF.
-	* src/engine/qof_book_merge.c: Re-instating fixes to
+	* src/engine/qof_book_merge.c: Reinstating fixes to
 	QOF_TYPE_CHAR handling in merge.
 	* src/engine/qofbackend.h: Definition of ERR_FILEIO_WRITE_ERROR
 	* src/gnome/Makefile.am: Building dialog-chart-export with
@@ -4778,12 +4778,12 @@ r12228 | chris | 2005-12-31 17:28:42 -0500 (Sat, 31 Dec 2005) | 2 lines
 	* src/gnome-utils/transfer.glade: Make all input fields expand on
 	the X axis.
 
-	* configure.in: Remove reqirement for Berkeley DB.  The G2 branch
+	* configure.in: Remove requirement for Berkeley DB.  The G2 branch
 	compiles and runs fine without it.
 
 	* src/gnome-utils/gnc-gnome-utils.c: Have gnucash read a private
 	RC file.  This makes it easy to apply styles to entire classes of
-	widgets in gnucsah without affecting any other application.
+	widgets in gnucash without affecting any other application.
 
 	* src/gnome-utils/gnc-tree-view-account.c:
 	* src/gnome-utils/gnc-tree-view-commodity.c:
@@ -4965,7 +4965,7 @@ r12228 | chris | 2005-12-31 17:28:42 -0500 (Sat, 31 Dec 2005) | 2 lines
 	the schema namespace URL.
 	* src/backend/qsf/qsf-backend.c:
 	* src/backend/qsf/qsf-xml-map.c:
-	* src/backend/qsf/qsf-xml.c: Re-organising and adding
+	* src/backend/qsf/qsf-xml.c: Re-organizing and adding
 	references and almost complete KVP support to QSF backend.
 	* src/backend/qsf/qsf-map.xsd.xml:
 	* src/backend/qsf/qsf-object.xsd.xml: Correcting attribute
@@ -5010,7 +5010,7 @@ r12228 | chris | 2005-12-31 17:28:42 -0500 (Sat, 31 Dec 2005) | 2 lines
 
 2005-02-15  Derek Atkins  <derek@ihtfp.com>
 
-	Chris Shoemaker's patch: Avoid use of unitialized values in guid.c.
+	Chris Shoemaker's patch: Avoid use of uninitialized values in guid.c.
 	* Avoid use of uninitialized values in guid.c
 	  - prevent md5 seeding from using uninitialized stack contents
 	  - give used/null GUID recognizable memory signature
@@ -5119,7 +5119,7 @@ r12228 | chris | 2005-12-31 17:28:42 -0500 (Sat, 31 Dec 2005) | 2 lines
           Converted the following functions to use GObject:
                 gnc_date_format_get_type,
                 gnc_date_format_class_init
-          Created gnc_date_format_dipose function
+          Created gnc_date_format_dispose function
 
 2005-01-02  Derek Atkins  <derek@ihtfp.com>
 
@@ -5144,7 +5144,7 @@ r12228 | chris | 2005-12-31 17:28:42 -0500 (Sat, 31 Dec 2005) | 2 lines
 
 	* src/engine/Transaction.c: Remove misleading (char*) casts by
 	Linas Vepstas from 2003-09-14, but nevertheless the code doesn't
-	have any errorneous double-free's at this point.
+	have any erroneous double-free's at this point.
 
 2005-10-07  Christian Stimming  <stimming@tuhh.de>
 

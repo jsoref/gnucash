@@ -56,7 +56,7 @@
 	  #564928: Fix segfault when closing a invoice tab (r17747
 	  regression) This reverts one hunk of r17747: It's not necessary
 	  because the hash table keys are freed up in
-	  gnucash_sheet_cleer_styles. Patch by Jonathan Kamens. BP
+	  gnucash_sheet_clear_styles. Patch by Jonathan Kamens. BP
 
 2008-12-20 03:06  plongstaff
 
@@ -134,7 +134,7 @@
 	  removed from the compilation, but still referenced from the ui
 	  xml file. This commit changes this so that the database
 	  connection action is still created, but the add_to_window()
-	  function is overriden to set that action insensitive if
+	  function is overridden to set that action insensitive if
 	  --enable-dbi is not given.
 
 2008-12-06 21:54  cstim
@@ -143,7 +143,7 @@
 	  src/backend/file/gnc-recurrence-xml-v2.c,
 	  src/gnome-utils/gnc-frequency.c,
 	  src/gnome/glade/sched-xact.glade: Revert r17730 and re-apply
-	  r17725, "Bug #106401: Add SX weekend occurence to be shifted to
+	  r17725, "Bug #106401: Add SX weekend occurrence to be shifted to
 	  weekdays" This time, the XML element handler for the "weekend
 	  adjustment" is optional so that old files without that element
 	  are read without error. Patch (well, kind of) by Simon Arlott.
@@ -217,8 +217,8 @@
 	  src/backend/file/gnc-recurrence-xml-v2.c,
 	  src/gnome-utils/gnc-frequency.c,
 	  src/gnome/glade/sched-xact.glade: Partly revert r17725, "Bug
-	  #106401: Add SX weekend occurence to be shifted to weekdays" The
-	  original patch doesn't seem to deal with backward compatiblity
+	  #106401: Add SX weekend occurrence to be shifted to weekdays" The
+	  original patch doesn't seem to deal with backward compatibility
 	  in the XML parser well enough. This commit reverts the GUI- and
 	  XML-related parts of r17725.
 
@@ -261,7 +261,7 @@
 	  src/gnome/glade/sched-xact.glade,
 	  src/gnome/gnc-plugin-page-budget.c,
 	  src/gnome/gnc-plugin-page-sx-list.c: Bug #106401: Add SX weekend
-	  occurence to be shifted to weekdays The RFE wanted to specify
+	  occurrence to be shifted to weekdays The RFE wanted to specify
 	  the date of a scheduled transaction like this: At the 15th of
 	  each month but if that is a saturday or a sunday then at the
 	  next monday after that (or the friday before) This patch
@@ -317,7 +317,7 @@
 
 	* [r17720] configure.in, macros/as-scrub-include.m4: Bug #548218:
 	  Unify command substitution shell pattern The command
-	  substiturion by $(expression) causes configure error on solaris.
+	  substitution by $(expression) causes configure error on solaris.
 	  Command substitution via $() is even part of
 	  http://www.opengroup.org/onlinepubs/009695399/utilities/xcu_chap02.html
 	  , which I regard as POSIX definition of a shell, i.e. the
@@ -357,7 +357,7 @@
 	  accounts/nl/Makefile.am, accounts/nl/acctchrt_full.gnucash-xea,
 	  configure.in: Bug #514455: Adding Dutch (Netherlands)
 	  translation of account template This translation has been
-	  reviewed by one of the gnuchash translators for Dutch nl_NL.
+	  reviewed by one of the gnucash translators for Dutch nl_NL.
 	  There is no need for an extra translation for Belgium, this
 	  version aims to be 'as Dutch as possible'. This file can now be
 	  used to translate the other templates English to Dutch.
@@ -559,7 +559,7 @@
 2008-10-31 10:28  cstim
 
 	* [r17677] src/register/ledger-core/split-register-control.c: Fix
-	  uninitalized variable that was introduced by an extra scope
+	  uninitialized variable that was introduced by an extra scope
 	  added in r17654.
 
 2008-10-29 21:18  cstim
@@ -684,8 +684,8 @@
 	* [r17659] src/gnome/dialog-sx-from-trans.c: Bug #532889: When
 	  showing sx from txn preview dense cal, choose correct starting
 	  month. When creating a scheduled transaction from a given
-	  transaction, the first occurence from the transaction date
-	  onwards is found by calculating the first occurence after the
+	  transaction, the first occurrence from the transaction date
+	  onwards is found by calculating the first occurrence after the
 	  day before that date. OTOH, that "yesterday" should not be used
 	  as start date of the dense calendar. Patch by Andreas Köhler
 	  <andi5.py@gmx.net>. BP
@@ -798,7 +798,7 @@
 
 	* [r17654] src/register/ledger-core/split-register-control.c: Bug
 	  #128774: Try to fix "edit exchange rate" context menu
-	  disfunctionality Patch by andi5: The logic to determine whether
+	  dysfunctionality Patch by andi5: The logic to determine whether
 	  there is an exchange rate dialog to be showed is complex and
 	  should not run when you user traverses her register. This patch
 	  adds a bit more information for the user where this logic
@@ -984,7 +984,7 @@
 	  accounts/fi_FI/acctchrt_ry.gnucash-xea, configure.in: Add
 	  Finnish account templates. One template is the default one
 	  (common accounts), the other ("ry") is for a finnish non-profit
-	  organisation. Tuomo Kohvakka <tuomo.kohvakka@iki.fi> BP
+	  organization. Tuomo Kohvakka <tuomo.kohvakka@iki.fi> BP
 
 2008-09-27 17:31  plongstaff
 
@@ -2124,7 +2124,7 @@
 2008-07-12 01:12  rolf
 
 	* [r17308] accounts/de_DE/acctchrt_skr04.gnucash-xea: SKR04:
-	  removcal of even more sample accounts. fix spelling mistake.
+	  removal of even more sample accounts. fix spelling mistake.
 
 2008-07-12 01:00  rolf
 
@@ -2770,7 +2770,7 @@
 	  cannot conflict with types of anchor accounts of open registers,
 	  as no register can have accessed it yet. On the contrary,
 	  killing the general ledger that is used to input a new account
-	  is contraproductive. BP
+	  is counterproductive. BP
 
 2008-05-11 21:41  andi5
 
@@ -3170,7 +3170,7 @@
 2008-03-20 23:14  andi5
 
 	* [r17038] src/import-export/hbci/dialog-hbcitrans.c,
-	  src/import-export/hbci/gnc-plugin-hbci.c: Remove some unnessary
+	  src/import-export/hbci/gnc-plugin-hbci.c: Remove some unnecessary
 	  aqbanking version checks as we depend on >= 1.6.1. BP
 	* [r17037] src/gnome-utils/gnc-dialog.c,
 	  src/gnome-utils/gnc-dialog.h,
@@ -3362,7 +3362,7 @@
 	* [r17000] src/gnome/gnc-plugin-page-register.c: Bug#114591: Allow
 	  refinements of transaction searches. Overrides the default
 	  search function on register plugin pages and call
-	  gnc_ui_find_transactions_dialog_create() with the current legder
+	  gnc_ui_find_transactions_dialog_create() with the current ledger
 	  display as parameter. This also enables refinements of existing
 	  transaction search results.
 

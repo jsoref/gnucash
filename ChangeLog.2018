@@ -264,7 +264,7 @@
 
 2019-02-21 Frank H. Ellenberger
 
-	* Remove obsolete hr_HR direcory
+	* Remove obsolete hr_HR directory
 
 2019-02-21 Frank H. Ellenberger
 
@@ -656,11 +656,11 @@
 
 2019-01-27 Alex Aycinena
 
-	* scroll txf view to put line for selected account in center of view; doesn't work for first selected account but does for all subsequent delections. Will fix in later commit when I figure out why.
+	* scroll txf view to put line for selected account in center of view; doesn't work for first selected account but does for all subsequent selections. Will fix in later commit when I figure out why.
 
 2019-01-27 Alex Aycinena
 
-	* bug 518833 - partially solves by not allowing multiple account selection; rest of bug is dupicate of 554391
+	* bug 518833 - partially solves by not allowing multiple account selection; rest of bug is duplicate of 554391
 
 2019-01-26 Christopher Lam
 
@@ -892,7 +892,7 @@
 
 2019-01-24 Alex Aycinena
 
-	* remove unnecesary 'home' level in path for US Income Tax book tax information
+	* remove unnecessary 'home' level in path for US Income Tax book tax information
 
 2019-01-23 John Ralls
 
@@ -1188,7 +1188,7 @@
 
 2018-12-27 Geert Janssens
 
-	* Fix memory leaks in dialog-file-acces.c:geturl
+	* Fix memory leaks in dialog-file-access.c:geturl
 
 2018-12-27 Geert Janssens
 
@@ -1232,7 +1232,7 @@
 
 2018-11-06 Christopher Lam
 
-	* Invoice: Remove H1 title and superflous option.
+	* Invoice: Remove H1 title and superfluous option.
 
 2018-12-25 John Ralls
 
@@ -1248,11 +1248,11 @@
 
 2018-12-24 John Ralls
 
-	* Merge Christoff Holterman's 'PR-Python-GetBalTaxValues' into maint.
+	* Merge Christoph Holtermann's 'PR-Python-GetBalTaxValues' into maint.
 
 2018-12-24 John Ralls
 
-	* Merge Frank Oltmans's 'py_get_all_customers' into maint.
+	* Merge Frank Oltmanns's 'py_get_all_customers' into maint.
 
 2018-11-17 Frank Oltmanns
 
@@ -1320,11 +1320,11 @@
 
 2018-12-11 Robert Fewell
 
-	* Change the way colours are imported by the CSV account tree importer
+	* Change the way colors are imported by the CSV account tree importer
 
 2018-12-11 Robert Fewell
 
-	* Change the sensitivity of the Cascade colour menu option
+	* Change the sensitivity of the Cascade color menu option
 
 2018-12-11 Robert Fewell
 
@@ -1348,7 +1348,7 @@
 
 2018-12-21 Frank H. Ellenberger
 
-	* de.po: fix 1 MsgStr to test boost::locale::tramslate
+	* de.po: fix 1 MsgStr to test boost::locale::translate
 
 2018-12-20 John Ralls
 
@@ -1644,7 +1644,7 @@
 
 2018-10-30 Robert Fewell
 
-	* Bug 796915 - Update Account colour background
+	* Bug 796915 - Update Account color background
 
 2018-10-18 Robert Fewell
 
@@ -1920,7 +1920,7 @@
 
 2018-10-16 John Ralls
 
-	* Merge Christoph Holterman's 'PR-python2to3fixes' into maint.
+	* Merge Christoph Holtermann's 'PR-python2to3fixes' into maint.
 
 2018-10-16 John Ralls
 
@@ -2192,7 +2192,7 @@
 
 2018-09-20 John Ralls
 
-	* Merge branch Christoph Holterman's 'python-query-test' into maint
+	* Merge branch Christoph Holtermann's 'python-query-test' into maint
 
 2018-09-20 Christoph Holtermann
 
@@ -2480,7 +2480,7 @@
 
 2018-09-08 John Ralls
 
-	* Merge Christoff Holterman's Bug 796137 repair into maint.
+	* Merge Christoph Holtermann's Bug 796137 repair into maint.
 
 2018-09-07 Christoph Holtermann
 
@@ -2676,7 +2676,7 @@
 
 2018-06-19 Robert Fewell
 
-	* Hide the filter/sort save button when appropiate
+	* Hide the filter/sort save button when appropriate
 
 2018-06-19 Robert Fewell
 
@@ -3236,7 +3236,7 @@
 
 2018-07-15 Robert Fewell
 
-	* Add the ability to cascade account colours in account tree
+	* Add the ability to cascade account colors in account tree
 
 2018-07-14 John Ralls
 
@@ -3248,7 +3248,7 @@
 
 2018-07-13 John Ralls
 
-	* Fix test-backend-dbi for Postgress and MySQL.
+	* Fix test-backend-dbi for Postgres and MySQL.
 
 2018-07-13 John Ralls
 
@@ -3920,7 +3920,7 @@
 
 2018-05-22 Bill Nottingham
 
-	* Modify date formatters to strip out certian specifiers.
+	* Modify date formatters to strip out certain specifiers.
 
 2018-05-19 Geert Janssens
 
@@ -4180,7 +4180,7 @@
 
 2018-04-28 John Ralls
 
-	* Update translations from the Tranlation Project.
+	* Update translations from the Translation Project.
 
 2018-04-28 Geert Janssens
 
@@ -4472,7 +4472,7 @@
 
 2018-04-14 Geert Janssens
 
-	* csv-impport - Allow empty amount fields
+	* csv-import - Allow empty amount fields
 
 2018-04-14 Geert Janssens
 
@@ -5072,7 +5072,7 @@
 
 2018-03-09 John Ralls
 
-	* Fix boost linking problem on Unbuntu 14.
+	* Fix boost linking problem on Ubuntu 14.
 
 2018-03-09 John Ralls
 
@@ -5216,7 +5216,7 @@
 
 2018-03-05 Christopher Lam
 
-	* Modernise chart colours
+	* Modernize chart colors
 
 2018-03-04 Christopher Lam
 
@@ -5896,7 +5896,7 @@
 
 2018-02-02 Geert Janssens
 
-	* Provide preference panel to set the Alpha Vantage API key needed for fincance::quote
+	* Provide preference panel to set the Alpha Vantage API key needed for finance::quote
 
 2018-02-02 Geert Janssens
 
@@ -6120,7 +6120,7 @@
 
 2018-01-25 John Ralls
 
-	* Remove overview links to nonexistant articles.
+	* Remove overview links to nonexistent articles.
 
 2018-01-25 John Ralls
 
@@ -6196,11 +6196,11 @@
 
 2018-01-22 Di Mang
 
-	* ru.po (unstable): some improvments for translation of frequency words in gnc-frequency.glade
+	* ru.po (unstable): some improvements for translation of frequency words in gnc-frequency.glade
 
 2018-01-22 Di Mang
 
-	* ru.po (maint): some improvments for translation of frequency words in gnc-frequency.glade
+	* ru.po (maint): some improvements for translation of frequency words in gnc-frequency.glade
 
 2018-01-21 John Ralls
 
@@ -6780,7 +6780,7 @@
 
 2018-01-03 fell
 
-	* remove absolute pathes from previous commit
+	* remove absolute paths from previous commit
 
 2018-01-03 fell
 

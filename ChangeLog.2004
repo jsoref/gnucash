@@ -322,7 +322,7 @@
 	  extensions menu.
 
 	* src/gnome-utils/gnc-html.[ch]: Revert gtkhtml2 changes; restoring
-	  gtkhtml1 version of the gnc-html.c code allows compatability
+	  gtkhtml1 version of the gnc-html.c code allows compatibility
 	  with gtkhtml3.
 
 	* src/gnome/ui/gnc-main-window-ui.xml: Add testing MiscAction,
@@ -407,7 +407,7 @@
 	  Add the file and multifile providers to the druid test
 
 	* src/app-utils/gnc-druid-provider-desc-edge.c:
-	  don't need to cast to the cuperclass -- just use it directly.
+	  don't need to cast to the superclass -- just use it directly.
 
 	* src/app-utils/gnc-druid-provider-desc/file.[ch]:
 	  add a history_id as a separate member for where to store
@@ -441,7 +441,7 @@
 	* src/gnome-utils/gnc-druid-provider-edge-gnome.[ch]:
 	  use basic-gobject framework to reduce the code size
 	  remove non-necessary overrides
-	  remove non-ncessary definitions
+	  remove unnecessary definitions
 	* src/gnome-utils/gnc-druid-provider-file-gnome.[ch]:
 	  Add a new provider that allows the user to select a file.
 
@@ -806,7 +806,7 @@
        	* src/import-export/import-backend.c:  Duplicate match tweaks:
                -Change MATCH_DATE_NOT_THRESHOLD from 3 weeks to two weeks
                -A transaction amount mismatch past the threshold is now punished by -5 instead of -1
-               -Date mismatch is now worth -5 isntead of -10
+               -Date mismatch is now worth -5 instead of -10
                -Check number mismatch is now punished -2, but only if both numbers are NOT empty.
        	* src/import-export/ofx/gnc-ofx-import.c: Update for new LibOfx, this among other things, gives gnucash Microsoft OFC support.
        	* src/import-export/ofx/test/test-link.cL Update for new LibOfx.
@@ -1180,7 +1180,7 @@
 	* src/engine/qof*:  Revert Linas' patch from last night which
 	  is broken is way too many ways to count.  First, the code didn't
 	  compile.  Second it was calling functions that took one argument
-	  with two due to broken casting.  Third, it had repurcusions in
+	  with two due to broken casting.  Third, it had repercussions in
 	  other sections of the code that Linas needs to take into account.
 
 2004-05-16  Derek Atkins  <derek@ihtfp.com>
@@ -1278,7 +1278,7 @@
 
 	* src/gnome-utils/gnc-dense-cal.c (gnc_dense_cal_draw_to_buffer):
 	At least be consistent about the background coloring of the month
-	labels, even if we're still not using GTK themeage correctly.
+	labels, even if we're still not using GTK theming correctly.
 
 	* src/gnome-utils/gnc-dense-cal.c (gnc_dense_cal_destroy): Destroy
 	the transient window when the widget is destroyed. Bug#103910.
@@ -1294,11 +1294,11 @@
 	* src/gnome/dialog-sx-from-trans.c (gnc_sx_create_from_trans):
 	Disallow the Scheduling of being-editing transactions in the
 	Register, preventing a class of unbalacned SX template
-	transactions from being entered and propogated through the
+	transactions from being entered and propagated through the
 	system. See Bug#130330.
 
 	* src/engine/FreqSpec.c (xaccFreqSpecGetFreqStr): Fix nasty
-	memory-corruption issue; insufficent bounds checking on array
+	memory-corruption issue; insufficient bounds checking on array
 	index. Bug#125600.
 
 	* src/gnome/dialog-sxsincelast.c (create_each_transaction_helper):
@@ -1399,7 +1399,7 @@
 
 2004-01-16  Derek Atkins  <derek@ihtfp.com>
 
-	* configure.in: fix a typo in the help (was --diable-gui).  Fixes #131414
+	* configure.in: fix a typo in the help (was --disable-gui).  Fixes #131414
 
 	* configure.in: add db-4.2 to the list of databases we search.
 	  We probably need a better mechanism to search for a working db

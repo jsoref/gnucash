@@ -118,7 +118,7 @@
 
 	* src/backend/file/gnc-backend-file.c: Fix error checking for
 	non-existing filenames. Will now always give a "file not found"
-	message on nonexisting paths or filenames. #351351.
+	message on nonexistent paths or filenames. #351351.
 
 2006-08-20  David Hampton  <hampton@employees.org>
 
@@ -424,7 +424,7 @@
 
 	* configure.in:
 	* autogen.sh:
-	  make sure that po/POTFILES.in exists so configure doens't complain.
+	  make sure that po/POTFILES.in exists so configure doesn't complain.
 
 	* configure.in:
 	  check for (g-wrap gw-glib-spec) instead of (g-wrap) #347404.
@@ -432,7 +432,7 @@
 2006-07-14  Andreas Köhler  <andi5.py@gmx.net>
 
 	* src/gnome/schemas/Makefile.am: Add
-	  apps_gnucash_scheduled_transctions.schemas.in. Fixes #340641.
+	  apps_gnucash_scheduled_transactions.schemas.in. Fixes #340641.
 
 	* src/register/ledger-core/split-register-control.c:
 	* src/register/ledger-core/split-register-model.c: Let
@@ -1246,7 +1246,7 @@ r14165 | chris | 2006-05-23 23:21:09 -0400 (Tue, 23 May 2006) | 18 lines
 
    Decrease coupling between backends and engine:
    - do not include the (supposedly) private qofbackend-p.h in qofutil.h,
-       instead, include it explictly in only the places that need it.
+       instead, include it explicitly in only the places that need it.
    - since backends are GModules, use the GModule module init hook, instead 
        of rolling our own and using a different function for each backend
    - loop over a list of backends for the engine to try to load 
@@ -1479,7 +1479,7 @@ r14037 | chris | 2006-05-13 22:07:52 -0400 (Sat, 13 May 2006) | 15 lines
    It is no longer necessary for the tree view to store a list of column names
    for default visible columns.
 
-   To faciliate the adaptation of pre-existing tree-views, the 
+   To facilitate the adaptation of pre-existing tree-views, the 
    view_column_find_by_name() has been publicized as 
    gnc_tree_view_find_column_by_name().
 
@@ -2028,7 +2028,7 @@ r13883 | chris | 2006-04-29 20:43:45 -0400 (Sat, 29 Apr 2006) | 3 lines
    M /gnucash/trunk/src/register/ledger-core/split-register.c
 
    When deleting the current Transaction in the register, let the action take
-   effect immediately by commiting the transaction if it's open.
+   effect immediately by committing the transaction if it's open.
 
 r13880 | chris | 2006-04-29 11:08:12 -0400 (Sat, 29 Apr 2006) | 2 lines
 
@@ -2108,7 +2108,7 @@ r13863 | chris | 2006-04-26 22:18:37 -0400 (Wed, 26 Apr 2006) | 14 lines
 2006-04-26  Joshua Sled  <jsled@asynchronous.org>
 
 	* src/gnome/dialog-scheduledxaction.c
-	(scheduledxaction_editor_dialog_destroy): re-order SX disolution
+	(scheduledxaction_editor_dialog_destroy): re-order SX dissolution
 	vs. ui teardown.  Add comment info-request response.
 
 2006-04-26  Christian Stimming <stimming@tuhh.de>
@@ -2134,11 +2134,11 @@ r13863 | chris | 2006-04-26 22:18:37 -0400 (Wed, 26 Apr 2006) | 14 lines
 	Bug#119078: promote register parse errors to the user.
 
 	* src/register/register-core/pricecell.c (gnc_price_cell_parse):
-	Return error if cell text isn't parseable via expression parser.
+	Return error if cell text isn't parsable via expression parser.
 
 	* src/register/register-core/pricecell.c (gnc_price_cell_leave):
 	* src/register/register-core/formulacell.c (gnc_formula_cell_leave): 
-	Promote error to UI if cell text isn't parseable.
+	Promote error to UI if cell text isn't parsable.
 
 	* src/register/register-core/table-allgui.c (gnc_table_save_cells): 
 	* src/register/ledger-core/split-register-load.c
@@ -2365,7 +2365,7 @@ r13811 | chris | 2006-04-19 21:37:50 -0400 (Wed, 19 Apr 2006) | 2 lines
    M /gnucash/trunk/lib/libqof/qof/qofutil.c
    M /gnucash/trunk/lib/libqof/qof/qofutil.h
 
-   Revert r13797 so that it can be recommited as logical, documented changes.
+   Revert r13797 so that it can be recommitted as logical, documented changes.
 
 2006-04-19  David Hampton  <hampton@employees.org>
 
@@ -2637,7 +2637,7 @@ r13766 | chris | 2006-04-10 22:55:57 -0400 (Mon, 10 Apr 2006) | 7 lines
 	  the whole problem.
 
 	* lots of files:
-	  Revert r13749.  Wedon't need to explicitly #include glib.h
+	  Revert r13749.  We don't need to explicitly #include glib.h
 	  because qof.h includes it for us.  Also, this changeset contains
 	  lots of other stuff that has nothing to do with glib.h.  Note
 	  that this revision wont build, but I'll fix that shortly.
@@ -3262,7 +3262,7 @@ r13683 | chris | 2006-03-22 19:33:11 -0500 (Wed, 22 Mar 2006) | 3 lines
 
 2006-03-13  Neil Williams  <linux@codehelp.co.uk>
 
-	* : Synchronise with external QOF 0.6.3
+	* : Synchronize with external QOF 0.6.3
 
 	* qof/deprecated.c : Tweak.
 	* qof/deprecated.h : Tweak.
@@ -3287,7 +3287,7 @@ r13683 | chris | 2006-03-22 19:33:11 -0500 (Wed, 22 Mar 2006) | 3 lines
 
 	* src/gnome-utils/gnc-plugin-page.c (gnc_plugin_page_add_book):
 	  Save a QofBook instead of its GUID in the list of books. This
-	  should renable the deletion of some plugin pages.
+	  should re-enable the deletion of some plugin pages.
 
 2006-03-13  Christian Stimming <stimming@tuhh.de>
 
@@ -3922,7 +3922,7 @@ r13498 | chris | 2006-03-05 18:46:39 -0500 (Sun, 05 Mar 2006) | 4 lines
 	* src/gnome-utils/dialog-account.c:
 	* lib/glib26/gkeyfile.c:
 	* lib/glib26/gutils26.[ch]: Make g_strv_length available outside
-	of the gkeyfile compatability library.
+	of the gkeyfile compatibility library.
 
 2006-03-04  Joshua Sled  <jsled@asynchronous.org>
 
@@ -4383,7 +4383,7 @@ r13423 | chris | 2006-02-28 14:34:42 -0500 (Tue, 28 Feb 2006) | 3 lines
 2006-02-26  Neil Williams <linux@codehelp.co.uk>
 
 	* qof/qof-be-utils.h : Replace macro to restore
-	programme flow.
+	program flow.
 	* qof/qofevent.c : 
 	* qof/qofevent.h : Outline method to make application 
 	events easier to use.
@@ -4816,7 +4816,7 @@ r13329 | chris | 2006-02-20 15:22:24 -0500 (Mon, 20 Feb 2006) | 2 lines
    M /gnucash/trunk/src/gnome-utils/dialog-utils.h
    M /gnucash/trunk/src/gnome-utils/gnc-main-window.c
 
-   Explictly require gtk2.6 for conditionally compiled code that needs it.
+   Explicitly require gtk2.6 for conditionally compiled code that needs it.
 
 r13328 | chris | 2006-02-20 15:09:02 -0500 (Mon, 20 Feb 2006) | 3 lines
 
@@ -6219,7 +6219,7 @@ r13040 | chris | 2006-01-29 19:59:25 -0500 (Sun, 29 Jan 2006) | 3 lines
 	* lib/libgsf-1.12.3/gsf/Makefile.am (pkglib_LTLIBRARIES)
 	* lib/goffice-0.0.4/goffice/Makefile.am (pkglib_LTLIBRARIES)
 	* configure.in: Use pkglib automake variables to install in a
-	gnucash-specific hierearchy; change configure.in paths for goffice
+	gnucash-specific hierarchy; change configure.in paths for goffice
 	for similar reasons.  Bug#328858.
 
 2006-01-25  Joshua Sled  <jsled@asynchronous.org>
@@ -6509,7 +6509,7 @@ r12975 | chris | 2006-01-24 20:36:28 -0500 (Tue, 24 Jan 2006) | 8 lines
    leaving only the highest level of gui initialization in /gnome/top-level.c
    Process --loglevel command-line option from C.
    Move the running of the startup hook from guile to C.
-   Distrubute bits of scheme from main.scm to the modules they're used in.
+   Distribute bits of scheme from main.scm to the modules they're used in.
    Remove more obsoleted scheme.
 
 
@@ -6565,10 +6565,10 @@ r12964 | chris | 2006-01-23 14:29:57 -0500 (Mon, 23 Jan 2006) | 5 lines
    M /gnucash/trunk/src/bin/Makefile.am
    M /gnucash/trunk/src/bin/gnucash-bin.c
 
-  Avoid GUI initialization durring --add-price-quotes, fixes #327670
+  Avoid GUI initialization during --add-price-quotes, fixes #327670
 
   BTW, it turns out that we don't need to call gtk_init().  It's called 
-  during the LIBGNOMEUI_MODULE initializtion from gnome_program_init().
+  during the LIBGNOMEUI_MODULE initialization from gnome_program_init().
 
 r12956 | chris | 2006-01-23 12:38:13 -0500 (Mon, 23 Jan 2006) | 28 lines
 
@@ -6586,10 +6586,10 @@ r12956 | chris | 2006-01-23 12:38:13 -0500 (Mon, 23 Jan 2006) | 28 lines
 
   Details:
     Remove the last bits of libguile from top-level.[ch].
-    Change the gui initialization funtions so they can be called from C.
+    Change the gui initialization functions so they can be called from C.
     Drop some gwrappers for gui initialization functions.
     Process the --nofile and filename command-line options from C.
-    Drastic simpilification of main.scm.
+    Drastic simplification of main.scm.
     Initialize the gui and enter the gtk event-loop from C.
 
   Even though there's some more clean-up to do, this patch does mark
@@ -6622,7 +6622,7 @@ r12947 | chris | 2006-01-22 22:43:55 -0500 (Sun, 22 Jan 2006) | 3 lines
    M /gnucash/trunk/src/scm/command-line.scm
    M /gnucash/trunk/src/scm/main.scm
 
-  Remove --devel option, which aparently doesn't do anything.
+  Remove --devel option, which apparently doesn't do anything.
   Also remove now unused guile portion of --add-price-quote option.
 
 r12946 | chris | 2006-01-22 22:26:01 -0500 (Sun, 22 Jan 2006) | 18 lines
@@ -6849,7 +6849,7 @@ r12902 | chris | 2006-01-19 13:43:59 -0500 (Thu, 19 Jan 2006) | 3 lines
    M /gnucash/trunk/src/bin/gnucash-bin.c
    M /gnucash/trunk/src/gnome/top-level.h
 
-  Remove "reverse_balance" fucntions from top-level.h.
+  Remove "reverse_balance" functions from top-level.h.
   Add another #include for gnucash-bin.c
 
 r12900 | chris | 2006-01-19 13:02:18 -0500 (Thu, 19 Jan 2006) | 4 lines
@@ -6967,7 +6967,7 @@ r12881 | chris | 2006-01-19 00:18:27 -0500 (Thu, 19 Jan 2006) | 2 lines
 
 2006-01-18  Joshua Sled  <jsled@asynchronous.org>
 
-	* src/gnome/dialog-sx-from-trans.c (sxftd_update_fs): Propgate
+	* src/gnome/dialog-sx-from-trans.c (sxftd_update_fs): Propagate
 	bi-weekly ui-frequency in transition from "schedule transaction"
 	dialog to "Advanced..." (Scheduled Transaction Editor).
 	Patch from Robert Zaleski <rzaleski81@yahoo.com>.
@@ -7067,7 +7067,7 @@ r12815 | chris | 2006-01-16 20:42:46 -0500 (Mon, 16 Jan 2006) | 2 lines
 
    M /gnucash/trunk/src/bin/overrides/Makefile.am
 
-  Don't distribute non-existant 'gnucash'
+  Don't distribute nonexistent 'gnucash'
 
 r12372 | chris | 2006-01-16 16:17:48 -0500 (Mon, 16 Jan 2006) | 2 lines
 
@@ -7179,7 +7179,7 @@ r12364 | chris | 2006-01-16 00:22:01 -0500 (Mon, 16 Jan 2006) | 2 lines
 	account-hierarchy merge conflicts before allowing Next to final
 	page.
 	(balance_cell_data_func): Add new subtlety around opening-balance
-	editing in the face of hierarachy-merging.
+	editing in the face of hierarchy-merging.
 	(on_finish): Reorder dialog finishing to work around account-tree
 	model bug, starting-balance-transaction creation, data-merging,
 	when-completed callback creation.
@@ -7481,7 +7481,7 @@ r12306 | chris | 2006-01-08 22:33:46 -0500 (Sun, 08 Jan 2006) | 2 lines
 2006-01-08  Christian Stimming  <stimming@tuhh.de>
 
 	* src/gnome-utils/gnc-main-window.c: Add gnc workaround function
-	for errorneous gtk_action_group_set_translation_domain. Fixes the
+	for erroneous gtk_action_group_set_translation_domain. Fixes the
 	statusbar-tooltip error mentioned on 2006-01-07. Filed in gtk as
 	bug#326200.
 
@@ -7508,7 +7508,7 @@ r12306 | chris | 2006-01-08 22:33:46 -0500 (Sun, 08 Jan 2006) | 2 lines
 	tooltip in the statusbar when the mouse is selection its menu
 	item. Code copied from gtk+'s test/testmerge.c. Works fine, except
 	that in non-C locales some "" tooltips are translated in a weird
-	way. Maybe because "" is errorneously passed through gettext(),
+	way. Maybe because "" is erroneously passed through gettext(),
 	which will accidentally catch a wrong string from the po
 	files. This needs to be fixed.
 

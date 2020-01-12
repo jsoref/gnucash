@@ -36,7 +36,7 @@
 
 2014-12-10 Mike Alexander 
 
-	* Tell Guile (and others) to look in install/lib/gnucash for ligraries. Without this Guile can't find libgncmod-engine and GnuCash won't start, at least sometimes.
+	* Tell Guile (and others) to look in install/lib/gnucash for libraries. Without this Guile can't find libgncmod-engine and GnuCash won't start, at least sometimes.
 
 2014-12-21 John Ralls 
 
@@ -532,7 +532,7 @@
 
 2014-09-16 David Maline 
 
-	* Bug 733506 - (ForwadDisableQIF) The forward button is not active even though a file is selected
+	* Bug 733506 - (ForwardDisableQIF) The forward button is not active even though a file is selected
 
 2014-09-16 Jethro Beekman 
 
@@ -656,7 +656,7 @@
 
 2014-08-30 Geert Janssens 
 
-	* Bug 711440 - Tab labels have different background colour than containing gui element
+	* Bug 711440 - Tab labels have different background color than containing gui element
 
 2014-09-01 Mike Alexander 
 
@@ -672,7 +672,7 @@
 
 2014-08-31 Mike Alexander 
 
-	* Change gncOwnerGetBalanceInCurrency to only cosider lots that contain an invoice. This function is currently only used in the owner tree code and this change will cause payments not properly linked to invoices to be ignored when computing owner balances.
+	* Change gncOwnerGetBalanceInCurrency to only consider lots that contain an invoice. This function is currently only used in the owner tree code and this change will cause payments not properly linked to invoices to be ignored when computing owner balances.
 
 2014-08-31 Mike Alexander 
 
@@ -856,7 +856,7 @@
 
 2014-06-01 Mike Evans 
 
-	* Bug 730255 - Python bindings: Assigns bill entries to non-existant invoice.
+	* Bug 730255 - Python bindings: Assigns bill entries to nonexistent invoice.
 
 2014-05-15 Mike Evans 
 
@@ -912,7 +912,7 @@
 
 2014-05-19 Dmitry Pavlov 
 
-	* added context to ambigous i18n keys for scheduled transaction add/edit dialog
+	* added context to ambiguous i18n keys for scheduled transaction add/edit dialog
 
 2014-05-13 Mike Alexander 
 
@@ -944,7 +944,7 @@
 
 2014-05-08 Geert Janssens 
 
-	* Fix document type dispay for credit notes on owner report
+	* Fix document type display for credit notes on owner report
 
 2014-05-08 Amm 
 
@@ -952,7 +952,7 @@
 
 2014-05-05 Mike Alexander 
 
-	* Don't nest AC_MSG_CHECKING calls, it produces confuing output.
+	* Don't nest AC_MSG_CHECKING calls, it produces confusing output.
 
 2014-05-05 Colin 
 
@@ -1132,7 +1132,7 @@
 
 2014-03-31 Christian Stimming 
 
-	* Win32: Update gwenhyhwfar/aqbanking again, but slightly more cautious (gwen-4.11.0 does not compile on win/mingw right now)
+	* Win32: Update gwenhywfar/aqbanking again, but slightly more cautious (gwen-4.11.0 does not compile on win/mingw right now)
 
 2014-03-30 John Ralls 
 
@@ -1232,7 +1232,7 @@
 
 2014-02-28 Carsten Rinke 
 
-	* Update Window and Menu item from "Preconfigured-" to "Saved-" Report and add lables to the dialog with help texts
+	* Update Window and Menu item from "Preconfigured-" to "Saved-" Report and add labels to the dialog with help texts
 
 2014-03-10 Geert Janssens 
 
@@ -1276,7 +1276,7 @@
 
 2014-02-27 Geert Janssens 
 
-	* Improve function names and comments to reduce ambibuity
+	* Improve function names and comments to reduce ambiguity
 
 2014-02-27 Geert Janssens 
 
@@ -1556,7 +1556,7 @@
 
 2014-01-24 Geert Janssens 
 
-	* Drop old ampersand subsitution in a couple of reports
+	* Drop old ampersand substitution in a couple of reports
 
 2014-01-24 Geert Janssens 
 
@@ -1592,7 +1592,7 @@
 
 2014-01-22 Mike Alexander 
 
-	* Fix unitialized variable error in r23740. Thanks to Herbert Thoma for the patch.
+	* Fix uninitialized variable error in r23740. Thanks to Herbert Thoma for the patch.
 
 2014-01-22 Cristian Marchi 
 
@@ -1732,7 +1732,7 @@
 
 2014-01-19 Mike Alexander 
 
-	* Make various reports work with the "average cost" price source. THe Portfolio report crashed and several othsrs used "nearest" instead.
+	* Make various reports work with the "average cost" price source. THe Portfolio report crashed and several others used "nearest" instead.
 
 2014-01-19 Mike Alexander 
 

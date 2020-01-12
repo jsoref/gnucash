@@ -40,11 +40,11 @@
 
 2015-12-24 Mechtilde 
 
-	* correct the adaption too
+	* correct the adaptation too
 
 2015-12-24 Mechtilde 
 
-	* correct the adaption
+	* correct the adaptation
 
 2015-12-24 Mechtilde 
 
@@ -80,7 +80,7 @@
 
 2015-12-26 Grzegorz Milka 
 
-	* Bug 759859 - Reconcilation does not convert transactions' currency to the main one making reconcilation impossible.
+	* Bug 759859 - Reconciliation does not convert transactions' currency to the main one making reconciliation impossible.
 
 2015-12-26 fell 
 
@@ -240,7 +240,7 @@
 
 2015-11-12 Peter Broadbery 
 
-	* engine-utilities.scm: Add a specialised hashtable.
+	* engine-utilities.scm: Add a specialized hashtable.
 
 2015-11-09 Peter Broadbery 
 
@@ -278,7 +278,7 @@
 
 	* Updated Arabic Translation by Abdulsalam Alshilash.
 
-2015-11-05 Bill Nottingam 
+2015-11-05 Bill Nottingham 
 
 	* Bug 742321 - Reset temporary prefs on application startup
 
@@ -832,7 +832,7 @@
 
 2015-09-09 Geert Janssens 
 
-	* Small doxigen improvements to previous commit
+	* Small doxygen improvements to previous commit
 
 2015-09-09 Matt 
 
@@ -860,7 +860,7 @@
 
 2015-08-10 John Ralls 
 
-	* Add note at the top to disuade users from contacting authors directly for support.
+	* Add note at the top to dissuade users from contacting authors directly for support.
 
 2015-08-02 John Ralls 
 
@@ -1268,7 +1268,7 @@
 
 2015-02-02 John Ralls 
 
-	* Remove build and run of no-longer-existant intl-scm/guile-strings.
+	* Remove build and run of no-longer-existent intl-scm/guile-strings.
 
 2015-01-31 Geert Janssens 
 

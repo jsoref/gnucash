@@ -1689,7 +1689,7 @@
 2011-11-08 19:04  gjanssens
 
 	* [r21536] src/business/business-gnome/dialog-invoice.c: Bug
-	  #663638 - Posting Invoices asks for curency conversion for blank
+	  #663638 - Posting Invoices asks for currency conversion for blank
 	  lines BP
 
 2011-11-08 18:25  gjanssens
@@ -2235,7 +2235,7 @@
 2011-10-08 19:19  mikee
 
 	* [r21400] src/import-export/csv/gnc-csv-import.c: Bug #660875 -
-	  Make columns have minumum width in import dialog.
+	  Make columns have minimum width in import dialog.
 
 2011-10-08 19:14  jralls
 
@@ -2462,7 +2462,7 @@
 	  src/gnome/window-reconcile.c,
 	  src/register/ledger-core/dialog-dup-trans.c: Bug #659504 -
 	  Migrate Register and reconcile from GladeXML to Builder Patch by
-	  Robert Fewel Note: this patch is limited to the conversion of
+	  Robert Fewell Note: this patch is limited to the conversion of
 	  widgets found in the libglade files. Both the Register and the
 	  Reconcile features still depend on deprecated Gtk/Gnome widgets
 	  (like GtkCList), which are added programmatically. Eventually
@@ -2614,7 +2614,7 @@
 
 2011-09-11 14:24  gjanssens
 
-	* [r21253] src/plugins/bi_import/bi_import.c: minor formating fix
+	* [r21253] src/plugins/bi_import/bi_import.c: minor formatting fix
 	* [r21252] src/plugins/bi_import/gui.c: Changed 3rd import regexp
 	  to actually accept quotes on all fields, and 4rd to accept
 	  commas and quotes, as advertised in the UI.
@@ -4065,7 +4065,7 @@
 	  </btd> tags instead of <b></td> *are missing a </center> tag
 	  preventing html validation. This patch removes the intended </b>
 	  and makes a clean </td> out of the necessary tags. The styles
-	  are set through css anyhow. Furthmore it adds the closing
+	  are set through css anyhow. Furthermore it adds the closing
 	  </center> tag. BP
 	* [r20674] src/report/stylesheets/stylesheet-easy.scm,
 	  src/report/stylesheets/stylesheet-fancy.scm,
@@ -4204,7 +4204,7 @@
 
 	* [r20651]
 	  src/business/business-gnome/gnc-plugin-page-owner-tree.c: Fix an
-	  unintialized variable warning.
+	  uninitialized variable warning.
 
 2011-05-15 19:28  cstim
 
@@ -4322,7 +4322,7 @@
 	  src/gnome/gtkbuilder/Makefile.am,
 	  src/gnome/gtkbuilder/owner.glade, src/gnome/gtkbuilder/owner.ui:
 	  Rename owner.ui to owner.glade I read that .ui should be the
-	  devault extension for gtkbuilder files, but it turns out that
+	  default extension for gtkbuilder files, but it turns out that
 	  would conflict with qt designer files. On Fedora (at least) only
 	  .glade is recognized as a file editable by glade-3.
 
@@ -4368,7 +4368,7 @@
 	  employees, can be sorted and filtered so far. But attempts to
 	  edit any owner will cause a crash for now.
 	* [r20622] src/engine/gncOwner.c, src/engine/gncOwner.h: Add
-	  gncOnwer* convenience wrappers for BeginEdit, CommitEdit and
+	  gncOwner* convenience wrappers for BeginEdit, CommitEdit and
 	  Destroy. This allows to begin edit, commit edit or destroy an
 	  owner without knowing its type.
 	* [r20621] src/business/business-core/business-core.scm,
@@ -4831,7 +4831,7 @@
 	  code are converted. This first commit for example contains a
 	  converted account hierarchy setup assistant, but not yet the
 	  code to use it, so the old druid is still in the libglade file.
-	  Once the code can succesfully use the new assistant from the
+	  Once the code can successfully use the new assistant from the
 	  gtkbuilder file, the old druid will be removed from the libglade
 	  file.
 	* [r20530] src/gnome/glade/account.glade: Add New Account
@@ -5392,7 +5392,7 @@
 	  const-correctness.
 	* [r20407] configure.ac: Configure simplification: Use pkg-config
 	  for libofx. Remove obsolete external qof detection. (Somehow the
-	  argument --with-qt3-wizard-package was writting right inside the
+	  argument --with-qt3-wizard-package was writing right inside the
 	  qof code stuff. This has been moved to the aqbanking section
 	  now.)
 	* [r20406] packaging/win32/crossbuild_webkit.sh,
@@ -5498,7 +5498,7 @@
 
 	* [r20394] src/report/report-gnome/gnc-plugin-page-report.c: When
 	  setting a printer job name, remove slashes because they are not
-	  allowes in filenames.
+	  allowed in filenames.
 
 2011-03-10 22:23  cstim
 
@@ -5633,7 +5633,7 @@
 	  The only difference between this commit and r20207 is that,
 	  contrary to the recommendation given in gnc-tree-view.h, "Use
 	  GNC_TREE_VIEW_COLUMN_DATA_NONE if you plan on using a non-model
-	  data source for this column", it cobtinues to use
+	  data source for this column", it continues to use
 	  "GNC_TREE_MODEL_ACCOUNT_COL_TAX_INFO". Using
 	  "GNC_TREE_VIEW_COLUMN_DATA_NONE" generates problems later in the
 	  "gnc_tree_view_add_text_column" routine when it tries to set up
@@ -5648,7 +5648,7 @@
 	  GNC_TREE_MODEL_ACCOUNT_COL_TAX_INFO model column if the row is
 	  expanded; otherwise it combines it with the data in the
 	  GNC_TREE_MODEL_ACCOUNT_COL_TAX_INFO_SUB_ACCT model column.
-	  Modily the view creation function to use the new
+	  Modify the view creation function to use the new
 	  tax_info_data_func for the text after having first set it to
 	  GNC_TREE_MODEL_ACCOUNT_COL_TAX_INFO to prevent the problem
 	  mentioned above, thereby overriding it.
@@ -6116,8 +6116,8 @@
 	* [r20265]
 	  src/optional/python-bindings/example_scripts/get_quotes.pl,
 	  src/optional/python-bindings/example_scripts/quotes_historic.py:
-	  Bug #640347: Adding Example Skripts for historic Stock Quotes
-	  This patch adds the example skripts from
+	  Bug #640347: Adding Example Scripts for historic Stock Quotes
+	  This patch adds the example scripts from
 	  http://wiki.gnucash.org/wiki/Stocks/get_prices to the directory
 	  python-bindings/example_scripts. Patch by Christoph Holtermann.
 	* [r20264]
@@ -6332,7 +6332,7 @@
 
 	* [r20214] src/core-utils/gnc-locale-utils.c,
 	  src/core-utils/gnc-locale-utils.h: The new files for gnc_locale
-	  functions, ommitted from r20110.
+	  functions, omitted from r20110.
 
 2011-01-31 04:35  jralls
 
@@ -6395,7 +6395,7 @@
 	  GNC_TREE_MODEL_ACCOUNT_COL_TAX_INFO model column if the row is
 	  expanded; otherwise it combines it with the data in the
 	  GNC_TREE_MODEL_ACCOUNT_COL_TAX_INFO_SUB_ACCT model column.
-	  Modily the view creation function to use the new
+	  Modify the view creation function to use the new
 	  tax_info_data_func.
 
 2011-01-30 18:33  gjanssens
@@ -6434,7 +6434,7 @@
 	  src/backend/sql/gnc-backend-sql.c, src/core-utils/gnc-main.c,
 	  src/core-utils/gnc-main.h: Add gnc_get_long_version, a guint
 	  concocted by adding the version values together allowing two
-	  digits for each. Add a new version value, GNUNCASH_NANO_VERSION,
+	  digits for each. Add a new version value, GNUCASH_NANO_VERSION,
 	  to be incremented when there's any change to data serialization.
 	  Use the new gnc_get_long_version to tag the Gnucash version in
 	  the versions table in the dbi backend.
@@ -6855,7 +6855,7 @@
 
 	* [r20142] po/POTFILES.in, po/en.po, src/bin/gnucash-bin.c:
 	  Rejigger the set_macos_locale function to better handle
-	  qualified languages (e.g., Portugues (Portugal). Add po/en.po so
+	  qualified languages (e.g., Portuguese (Portugal). Add po/en.po so
 	  that english doesn't have to be special-cased to the C locale.
 
 2011-01-21 22:27  gjanssens
@@ -6921,7 +6921,7 @@
 	  src/gnome/schemas/apps_gnucash_dialog_common.schemas.in,
 	  src/gnome/schemas/apps_gnucash_dialog_prices.schemas.in,
 	  src/gnome/schemas/apps_gnucash_dialog_reconcile.schemas.in,
-	  src/gnome/schemas/apps_gnucash_dialog_scheduled_transctions.schemas.in,
+	  src/gnome/schemas/apps_gnucash_dialog_scheduled_transactions.schemas.in,
 	  src/gnome/schemas/apps_gnucash_dialog_totd.schemas.in,
 	  src/gnome/schemas/apps_gnucash_general.schemas.in,
 	  src/gnome/schemas/apps_gnucash_window_pages_account_tree.schemas.in,
@@ -7056,7 +7056,7 @@
 	  src/backend/xml/test/test-files/xml2/conrads-file.gml2,
 	  src/backend/xml/test/test-files/xml2/every.gml2,
 	  src/backend/xml/test/test-files/xml2/goonies-file.gml2,
-	  src/backend/xml/test/test-files/xml2/hierachical-data-file.gml2,
+	  src/backend/xml/test/test-files/xml2/hierarchical-data-file.gml2,
 	  src/backend/xml/test/test-files/xml2/ms-money.gml2,
 	  src/backend/xml/test/test-files/xml2/pricedb1.gml2,
 	  src/backend/xml/test/test-xml-transaction.c: Bug #638225: Author
@@ -7239,7 +7239,7 @@
 	  via 2.2.x).
 	* [r20095] src/libqof/qof/qofquery.h,
 	  src/libqof/qof/qofquerycore.h: Fix some spelling errors in
-	  doxigen documentation
+	  doxygen documentation
 
 2011-01-14 21:10  cmarchi
 
@@ -7382,7 +7382,7 @@
 	  testing, I'm using this on an average-sized gnucash file (5.7MB)
 	  without noticing any particular slowdown in saving, but a
 	  wonderful reduction in diffs when comparing changes.
-	* [r20066] po/pt_BR.po: Bug #638962: Update Brazil Portugese
+	* [r20066] po/pt_BR.po: Bug #638962: Update Brazil Portuguese
 	  translation by Dorneles Treméa
 
 2011-01-11 20:39  cstim
@@ -7604,4 +7604,4 @@
 	  patch adds an additional update action to the import matcher as
 	  described above. It can be activated with the online banking
 	  preferences dialog. (Patch changed because of one function name
-	  adaption after r19936)
+	  adaptation after r19936)

@@ -377,7 +377,7 @@
 2009-12-17 06:30  mta
 
 	* [r18508] src/engine/Split.c: Teach xaccSplitConvertAmount that
-	  0*x = 0. Avoids looking up non-existant exchange rate.
+	  0*x = 0. Avoids looking up nonexistent exchange rate.
 
 2009-12-17 06:25  mta
 
@@ -675,7 +675,7 @@
 2009-11-28 15:51  plongstaff
 
 	* [r18444] src/backend/sql/gnc-transaction-sql.c: Fix bug 600486 -
-	  Unable to open sqllite file on Win7 64 bit Unposted invoice has
+	  Unable to open sqlite file on Win7 64 bit Unposted invoice has
 	  NULL tx guid, which wasn't being handled correctly. Doesn't
 	  crash on linux but does on windows.
 
@@ -761,7 +761,7 @@
 2009-11-21 04:32  plongstaff
 
 	* [r18431] src/backend/sql/gnc-transaction-sql.c: Fix bug 591098 -
-	  when starting Gnucash, "Present" and all other collumns exept
+	  when starting Gnucash, "Present" and all other columns except
 	  TOTAL are zero until you open the account Fix bug 598618 - does
 	  not calculate account balances correctly Both of these are
 	  happening because not all transactions are being loaded at
@@ -849,7 +849,7 @@
 	  multiple currencies. Because of bugs in the register code this
 	  is rarely called. 6. Changed importers to use
 	  xaccTransGetImbalanceValue to check for imbalance, assuming that
-	  they won't create multiple currency trasactions. 7. Changed
+	  they won't create multiple currency transactions. 7. Changed
 	  xaccTransScrubImbalance to create a balancing split for each
 	  imbalanced commodity in the transaction. Also balances the
 	  transaction value. The commodity balancing splits go into
@@ -1282,7 +1282,7 @@
 	  from the noun. The Dutch translator wrote: Would it be possible
 	  to differentiate between the instance of the _verb_ "Deposit" in
 	  src/register/ledger-core/split-register.c:2184 (the verb) and
-	  the occurrances of the _noun_ "Deposit" in
+	  the occurrences of the _noun_ "Deposit" in
 	  src/app-utils/prefs.scm (via intl-scm/guile-strings.c:6732) and
 	  src/import-export/csv/gnc-csv-model.c:37? This would help me
 	  tremendously with my efforts.
@@ -1395,7 +1395,7 @@
 
 2009-10-03 20:11  cstim
 
-	* [r18367] packaging/win32/install.sh: Win32: Build gwenhyfar
+	* [r18367] packaging/win32/install.sh: Win32: Build gwenhywfar
 	  without openssl because it doesn't need it anyway.
 
 2009-10-03 14:06  cstim
@@ -1470,7 +1470,7 @@
 	  balance for the parent account and all subaccounts. If set to
 	  FALSE, the function will only return the running balance of the
 	  parent account and will not include the subaccounts. The
-	  function has been modified also to accomodate this change. 2.
+	  function has been modified also to accommodate this change. 2.
 	  Update existing calls to the function to add the boolean value.
 	  This patch does not actually implement a runtime balance for
 	  single account register view or normal balance column because of
@@ -2355,7 +2355,7 @@
 	  time in an existing file. In this case, the commodity would
 	  *not* be stored. This was an attempt to avoid testing each time
 	  to see whether the commodity needed to be stored or not. For
-	  now, the test every time is re-instated.
+	  now, the test every time is reinstated.
 
 2009-08-05 20:52  cedayiv
 
@@ -2462,7 +2462,7 @@
 	  'gtk_editable_insert_text' and 'strlen' which require 'gchar *',
 	  so there is no alternative but to cast. 2 -
 	  src/backend/xml/gnc-budget-xml-v2.c The functions
-	  'xmlNewNode'and 'xmlSetProp' require arguments that are of type
+	  'xmlNewNode' and 'xmlSetProp' require arguments that are of type
 	  'const xmlChar *' but the arguments are string literals (char
 	  *). Can string literals be set up as type 'const xmlChar *'? The
 	  patchfile has them being cast. BAD_CAST is defined for this
@@ -2472,12 +2472,12 @@
 	  (char *). In the three other changes the type 'const xmlChar *'
 	  needs to be changed to 'char *' to be used by 'strcmp'. 4 -
 	  src/backend/xml/gnc-recurrence-xml-v2.c Like above for the
-	  functions 'xmlNewNode'and 'xmlSetProp'. 5 -
+	  functions 'xmlNewNode' and 'xmlSetProp'. 5 -
 	  src/html/gnc-html-graph-gog-webkit.c The function
 	  'g_base64_encode' requires type 'guchar *' for the argument and
 	  changing the variable to this caused other problems so used
 	  casting instead. 6 - src/libqof/backend/file/qsf-xml-map.c (6
-	  occurances) The first occurance was solved by changing the type
+	  occurrences) The first occurrence was solved by changing the type
 	  declaration, but the other 5 required casting.
 	* [r18225] src/backend/xml/io-example-account.c,
 	  src/backend/xml/sixtp-dom-parsers.c,
@@ -2669,7 +2669,7 @@
 
 	* [r18198] src/report/stylesheets/stylesheet-css.scm: Update CSS
 	  style sheet to use font buttons rather than strings. The font
-	  weight and style can be set, but colour and background colour
+	  weight and style can be set, but color and background color
 	  cannot yet be set. Also, alignment is fixed by the stylesheet.
 
 2009-07-11 03:43  plongstaff
@@ -2809,7 +2809,7 @@
 	  splits in the account, and reconciling queries for a subset of
 	  splits (those that haven't been reconciled), the reconcile query
 	  could do nothing and it would all still work. This will need to
-	  be revisted once the register and queries need to be smarter.
+	  be revisited once the register and queries need to be smarter.
 
 2009-07-03 16:16  plongstaff
 
@@ -5027,7 +5027,7 @@
 	  --enable-{debug,ref-counts-dump}. Those commas will be
 	  interpreted as commands and warnings printed out. Also, put
 	  square brackets around the strings describing the corresponding
-	  autoconf definitions to save them from possible substitions.
+	  autoconf definitions to save them from possible substitutions.
 	  Noticed by Kevin HaleBoyes. BP
 
 2009-01-05 15:36  plongstaff

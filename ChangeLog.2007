@@ -288,7 +288,7 @@
 	  improvement. BP
 	* [r16705] src/import-export/hbci/glade/hbci.glade,
 	  src/import-export/qif-import/qif.glade: Remove extra spaces in
-	  glade messages. Pointed out by Clytie Siddal. Those will break 2
+	  glade messages. Pointed out by Clytie Siddall. Those will break 2
 	  translated strings. BP
 	* [r16704] src/gnome/druid-merge.c,
 	  src/gnome/schemas/apps_gnucash_dialog_commodities.schemas.in,
@@ -348,7 +348,7 @@
 
 	* [r16678] src/pixmaps, src/pixmaps/Makefile.am: Bug#503889:
 	  Install icons according to spec. On Win32, however, don't run
-	  the non-existant (?) gtk-update-icon-cache. BP
+	  the nonexistent (?) gtk-update-icon-cache. BP
 
 2007-12-16 18:47  andi5
 
@@ -364,7 +364,7 @@
 2007-12-16 16:41  jsled
 
 	* [r16669] src/bin/gnucash-bin.c: Change some g_error's to
-	  g_warnings, which won't abend the app.
+	  g_warnings, which won't abort the app.
 
 2007-12-16 16:40  jsled
 
@@ -838,7 +838,7 @@
 
 2007-09-14 19:59  cstim
 
-	* [r16528] po/pt_BR.po: Updated Brazilian Portugese translation by
+	* [r16528] po/pt_BR.po: Updated Brazilian Portuguese translation by
 	  Leonardo Fontenelle and Leslie H. Watter. We are "a little"
 	  late, but this is the new pt_BR translation: - 3446 translated
 	  messages, - 184 fuzzy translations, - 56 untranslated messages.
@@ -1052,7 +1052,7 @@
 	  accounts/de_DE/acctchrt_full.gnucash-xea,
 	  accounts/de_DE/acctchrt_skr04.gnucash-xea: #472205: Replace &#;
 	  character references by latin0-encoded letters in german account
-	  hierachies.
+	  hierarchies.
 
 2007-09-03 20:22  rolf
 
@@ -1613,7 +1613,7 @@
 
 	* [r16284] branches/csv-import/src/import-export/csv/Makefile.am,
 	  branches/csv-import/src/import-export/csv/gnc-csv-model.c: Got
-	  rid of some unintialized warnings
+	  rid of some uninitialized warnings
 
 2007-07-09 17:09  lasindi
 
@@ -1811,7 +1811,7 @@
 
 2007-07-01 12:06  cstim
 
-	* [r16242] po/fr.po: Updated French translation by Yannik LE NY
+	* [r16242] po/fr.po: Updated French translation by Yannick LE NY
 
 2007-06-30 20:58  cstim
 
@@ -1820,7 +1820,7 @@
 
 2007-06-30 20:53  cstim
 
-	* [r16240] po/fr.po: Updated French translation by Yannik LE NY
+	* [r16240] po/fr.po: Updated French translation by Yannick LE NY
 
 2007-06-30 15:27  andi5
 
@@ -2155,7 +2155,7 @@
 
 	* [r16186] src/backend/file/gnc-schedxaction-xml-v2.c,
 	  src/doc/sx.rst, src/engine/Recurrence.c,
-	  src/engine/SchedXaction.c: Fix freq=None recurrnence +
+	  src/engine/SchedXaction.c: Fix freq=None recurrence +
 	  file-restore.
 
 2007-06-19 01:49  jsled
@@ -2475,7 +2475,7 @@
 
 2007-05-22 20:00  cstim
 
-	* [r16119] Makefile.am: Auto-genenerate ChangeLog only when
+	* [r16119] Makefile.am: Auto-generate ChangeLog only when
 	  building from svn.
 
 2007-05-22 19:17  cstim
@@ -2834,7 +2834,7 @@
 
 	* [r16044] src/backend/file/gnc-book-xml-v2.c,
 	  src/backend/file/gnc-schedxaction-xml-v2.c,
-	  src/backend/file/io-utils.c: Invert "allow_file_incompatabiilty"
+	  src/backend/file/io-utils.c: Invert "allow_file_incompatibility"
 	  tests: we now generate files that 2.0 might not read exactly.
 
 2007-05-04 13:30  andi5
@@ -3191,7 +3191,7 @@
 2007-04-22 21:20  hampton
 
 	* [r15991] src/gnome/glade/price.glade: Move the price
-	  manupilation buttons to the right side of the dialog. For
+	  manipulation buttons to the right side of the dialog. For
 	  languages where one of the button labels is very long, this
 	  prevents the dialog from becoming excessively wide.
 
@@ -3932,7 +3932,7 @@
 	  src/gnome-utils/gnc-sx-instance-dense-cal-adapter.c,
 	  src/gnome/dialog-sx-since-last-run.c: Rename
 	  GncSxInstances->list to instance_list, which at least emacs
-	  doesn't hilight as a (potential)keyword.
+	  doesn't highlight as a (potential)keyword.
 
 2007-04-06 01:15  hampton
 
@@ -4050,7 +4050,7 @@
 	* [r15819] branches/gobject-engine-dev-warlord,
 	  branches/gobject-engine-dev-warlord/src/business/business-core/gncEmployee.c,
 	  branches/gobject-engine-dev-warlord/src/business/business-core/gncEmployee.h:
-	  convert GncEmployee to GObject initialzation.
+	  convert GncEmployee to GObject initialization.
 	* [r15818] branches/gobject-engine-dev-warlord,
 	  branches/gobject-engine-dev-warlord/src/business/business-core/gncCustomer.c,
 	  branches/gobject-engine-dev-warlord/src/business/business-core/gncCustomer.h:
@@ -4124,7 +4124,7 @@
 	  branches/gobject-engine-dev-warlord/src/engine/Split.c,
 	  branches/gobject-engine-dev-warlord/src/engine/Split.h,
 	  branches/gobject-engine-dev-warlord/src/engine/SplitP.h: Convert
-	  Split objects to GObject intiialization
+	  Split objects to GObject initialization
 	* [r15806] branches/gobject-engine-dev-warlord,
 	  branches/gobject-engine-dev-warlord/src/engine/SX-book.c,
 	  branches/gobject-engine-dev-warlord/src/engine/SX-book.h:
@@ -4469,7 +4469,7 @@
 
 	* [r15747] packaging/win32/install.sh: Install.sh: Do not mix
 	  pexports and ".." as noted by Nathan Buchanan. pexports
-	  somestimes crashes in a new MSYS shell if a path, like the one
+	  sometimes crashes in a new MSYS shell if a path, like the one
 	  to a header file, contains "..".
 
 2007-03-21 22:50  andi5
@@ -6153,7 +6153,7 @@
 	  src/gnome/gnc-sx-list-tree-model-adapter.h: Factor the sx-list
 	  tree view out and promote into an GncTreeViewSxList as a
 	  subclass of GncTreeView. Move the gnc-sx-list-tree-model-adapter
-	  into gnome-utils to accomodate.
+	  into gnome-utils to accommodate.
 
 2007-02-21 19:50  andi5
 
@@ -6309,7 +6309,7 @@
 	  src/doc/sx.rst,
 	  src/gnome/schemas/apps_gnucash_general.schemas.in: Save/restore
 	  recurrence list (schedule) for SXes. Add
-	  "allow_file_incompatability" gconf key; emit incompatible
+	  "allow_file_incompatibility" gconf key; emit incompatible
 	  elements (sx-enabled and recurrence/schedule) only if allowed.
 
 2007-02-18 23:14  jsled
@@ -6331,7 +6331,7 @@
 2007-02-18 20:52  jsled
 
 	* [r15608] src/doc/sx.rst, src/gnome/dialog-sx-from-trans.c:
-	  Better behavior when the number-of-occurences field is blank.
+	  Better behavior when the number-of-occurrences field is blank.
 
 2007-02-18 20:27  jsled
 
@@ -7581,7 +7581,7 @@
 2007-02-07 14:38  cstim
 
 	* [r15519] packaging/win32/functions, packaging/win32/install.sh:
-	  Add checking for whether an unpacked directory isnt confused
+	  Add checking for whether an unpacked directory isn't confused
 	  with an older one.
 
 2007-02-07 10:12  cstim
@@ -7738,7 +7738,7 @@
 2007-02-01 21:47  jsled
 
 	* [r15489] src/gnome-utils/gnc-dense-cal.c: Rename "pts" ->
-	  "units". It's not actaully points.
+	  "units". It's not actually points.
 
 2007-02-01 14:25  cstim
 
@@ -8587,7 +8587,7 @@
 	  branches/sx-cleanup/src/app-utils/gnc-sx-instance-model.h,
 	  branches/sx-cleanup/src/doc/sx.rst,
 	  branches/sx-cleanup/src/gnome/dialog-sx-editor.c: rename
-	  publically-exposed utility functions.
+	  publicly-exposed utility functions.
 
 2007-01-14 01:49  jsled
 
@@ -8761,7 +8761,7 @@
 2007-01-12 16:35  cstim
 
 	* [r15343] src/import-export/hbci/gnc-hbci-utils.c: Remove unused
-	  header (that doesnt exist on win32)
+	  header (that doesn't exist on win32)
 
 2007-01-12 01:41  jsled
 

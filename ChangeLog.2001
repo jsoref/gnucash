@@ -1139,7 +1139,7 @@
 	Date widgets to make-from-transaction dialog.
 
 	* src/gnome/dialog-sx-from-trans.c (sxftd_add_template_trans): Use
-	the user-friendly amount formating instead of a stringified
+	the user-friendly amount formatting instead of a stringified
 	gnc_numeric.  Copies the account data over into the template
 	transaction.
 	(sxftd_init): Added; supports using the Description of the
@@ -2459,7 +2459,7 @@
 
 	* src/gnome/dialog-sxsincelast.c: same as below
 
-	* src/gnc-exp-parser.[ch]: seperate->separate
+	* src/gnc-exp-parser.[ch]: separate->separate
 
 	* src/engine/gnc-book.c: fix warnings
 
@@ -2487,7 +2487,7 @@
 
 	* src/engine/SchedXaction.{ch}: Added member for recording if
 	SX has changed since last save.
-	(xaccSchedXactionSetDirtyness) provide API for modifying that field.
+	(xaccSchedXactionSetDirtiness) provide API for modifying that field.
 	All setter functions changed to set member appropriately.
 	(xaccSchedXactionSetSlot, XaccSchedXactionGetSlot): New functions
 
@@ -2515,13 +2515,13 @@
 
 2001-07-30  Joshua Sled  <jsled@asynchronous.org>
 
-	* src/gnome/glade/sched-xact.glade: Added seperate reminders
+	* src/gnome/glade/sched-xact.glade: Added separate reminders
 	dialog from since-last-run dialog.  Removed reminders
 	frame/section from since-last-run dialog.  Added alternative SX
 	Editor UI [not presently used].
 
 	* src/gnome/dialog-sxsincelast.c: Changes for
-	reminders-as-seperate-dialog; selected reminders then update
+	reminders-as-separate-dialog; selected reminders then update
 	since-last-run dialog [whether it's open or not]; the dialogs
 	[mostly] deal with their closing conditions correctly.  Support
 	for ad-hoc variables in template-transaction-split formulas.
@@ -2532,7 +2532,7 @@
 	(tt_act_handler): Added support for restoring in-devel pre-CIT
 	.gml2/XMLv2 files.
 
-	* src/gnc-exp-parser.c (gnc_exp_parser_parse_seperate_vars): Added
+	* src/gnc-exp-parser.c (gnc_exp_parser_parse_separate_vars): Added
 	for Scheduled-Transaction-related since-last-run/split-formula
 	parsing.
 
@@ -3035,10 +3035,10 @@
 
 2001-07-06  Robert Graham Merkel  <rgmerk@mira.net>
 
-	* doc/sgml/C/xacc-balancreport.sgml: minor updates
+	* doc/sgml/C/xacc-balancereport.sgml: minor updates
 
 	* doc/sgml/C/image/regwin*.png, appr-income.png, bal-graph.png,
-	  report-hierachical.png: no longer used, so removed.
+	  report-hierarchical.png: no longer used, so removed.
 
 	* doc/sgml/C/image/*tax*.png: resaved as compressed png.
 
@@ -4903,7 +4903,7 @@
 	rates.
 
 	* src/scm/report-utilities.scm
-	(gnc:acccounts-get-all-subaccounts): added.
+	(gnc:accounts-get-all-subaccounts): added.
 
 	* src/scm/commodity-utilities.scm
 	(gnc:make-exchange-nearest-function): Added this and many more
@@ -4975,7 +4975,7 @@
 	commodity-list, for instantaneous prices, for instantaneous prices
 	of a commodity-list, and for cooking your morning coffee :)
 
-	* src/scm/report-utilites.scm, html-utilities.scm: create new
+	* src/scm/report-utilities.scm, html-utilities.scm: create new
 	function (gnc:accounts-get-commodities), use it in
 	html-utilities.scm.
 
@@ -6735,7 +6735,7 @@
 
 2001-03-27  James LewisMoss  <jimdres@mindspring.com>
 
-	* doc-tools/Makefile.am (LDADD): remove all the unneccesary libs.
+	* doc-tools/Makefile.am (LDADD): remove all the unnecessary libs.
 
 2001-03-27  Christian Stimming  <stimming@tuhh.de>
 
@@ -7221,7 +7221,7 @@
 
 	* src/guile/gnc.gwp: added gnc_rpc_server() and new RPC Backend errors
 
-	* src/scm/command-line.scm: added --rpc-server optio
+	* src/scm/command-line.scm: added --rpc-server option
 
 	* src/engine/Makefile.am: Added RPC subdir
 
@@ -7292,7 +7292,7 @@
 	* src/quotes/gnc-prices: new file -- replaces gnc-prices.in and is
 	now just a wrapper for "gnucash --add-price-quotes".
 
-	* src/quotes/Makefile.am: accomodated renaming of
+	* src/quotes/Makefile.am: accommodated renaming of
 	price-quote-helper to finance-quote-helper.  Also moved
 	finance-quote-helper to GNC_SHAREDIR from pkgdatadir.
 	(gncsharedir): grab GNC_SHAREDIR.
@@ -7419,7 +7419,7 @@
 	* src/gnome/gnc-html.c: set busy cursor on html widget
 	while request is being processed
 
-	* src/gnome/window-main.c: hierarchy not heirarchy
+	* src/gnome/window-main.c: hierarchy not hierarchy
 
 	* src/gnome/window-help.c: specify the help window as the
 	request dialog parent
@@ -7552,7 +7552,7 @@
 2001-03-12  James LewisMoss  <jimdres@mindspring.com>
 
 	* src/gnome/window-main.c (gnc_ui_xml_v2_cb): new func.
-	(gnc_ui_account_heirarchy_cb): new empty func.
+	(gnc_ui_account_hierarchy_cb): new empty func.
 	(gnc_main_create_menus): add devel menu.
 
 	* src/engine/io-gncxml-v2.h (struct _load_counter_struct): add
@@ -7763,14 +7763,14 @@
 
 2001-03-08  Robert Graham Merkel  <rgmerk@mira.net>
 
-	* src/scm/report/transaction-report.scm: More colourization.
+	* src/scm/report/transaction-report.scm: More colorization.
 	
 2001-03-07  Bill Gribble  <grib@billgribble.com>
 
 	* summary: separate the HTML and HTTP processing functions into
 	different files to facilitate reuse.  Modularize much of the
 	gnucash-specific behavior of the HTML code (<object> and form
-	submission) to use run-time-expandable bahavior tables.  Add the
+	submission) to use run-time-expandable behavior tables.  Add the
 	gnc-action: mechanism for installing form submission handlers.
 
 	* src/gnome/gng-gpg.c: initialize gnc-html handler for crypted
@@ -7916,7 +7916,7 @@
 	* src/scm/commodity-utilities.scm (gnc:sum-collector-stocks):
 	added such that stock prices are no longer shown but foreign
 	currencies are. Rounding precision increased. Added sanity checks
-	for arguments of various funtions.
+	for arguments of various functions.
 
 	* src/scm/report-utilities.scm (gnc:account-is-stock?): added
 	function
@@ -8032,7 +8032,7 @@
 	* src/register/splitreg.{ch}: mod for table-allgui changes
 
 	* src/register/table-allgui.{ch}: encapsulate 'view' callbacks
-	into a struct. add a callback for confiming data entry.
+	into a struct. add a callback for confirming data entry.
 
 2001-03-01  Robert Graham Merkel  <rgmerk@mira.net>
 
@@ -8405,7 +8405,7 @@
 
 	* src/engine/gnc-pricedb-xml-v1.c: new file.
 
-	* src/engine/gnc-engine-util.h: accomodate new functions.
+	* src/engine/gnc-engine-util.h: accommodate new functions.
 
 	* src/engine/gnc-commodity-xml-v2.c
 	(gnc_commodity_sixtp_parser_create): fix sixtp_dom_parser_new call.
@@ -8434,87 +8434,87 @@
 	* src/test/test-xml-commodity.c: fixes for new sixtp_dom_parser_new.
 
 	* src/guile/option-util.h: remove consts from
-	gnc_commoditities (after consultation with Bill).
+	gnc_commodities (after consultation with Bill).
 
 	* src/guile/option-util.c: remove consts from
-	gnc_commoditities (after consultation with Bill).
+	gnc_commodities (after consultation with Bill).
 
 	* src/guile/guile-util.h: remove consts from
-	gnc_commoditities (after consultation with Bill).
+	gnc_commodities (after consultation with Bill).
 
 	* src/guile/guile-util.c: remove consts from
-	gnc_commoditities (after consultation with Bill).
+	gnc_commodities (after consultation with Bill).
 
 	* src/guile/global-options.h: remove consts from
-	gnc_commoditities (after consultation with Bill).
+	gnc_commodities (after consultation with Bill).
 
 	* src/guile/global-options.c: remove consts from
-	gnc_commoditities (after consultation with Bill).
+	gnc_commodities (after consultation with Bill).
 
 	* src/gnome/window-register.c: remove consts from
-	gnc_commoditities (after consultation with Bill).
+	gnc_commodities (after consultation with Bill).
 
 	* src/gnome/window-main.c: remove consts from
-	gnc_commoditities (after consultation with Bill).
+	gnc_commodities (after consultation with Bill).
 
 	* src/gnome/gnc-currency-edit.h: remove consts from
-	gnc_commoditities (after consultation with Bill).
+	gnc_commodities (after consultation with Bill).
 
 	* src/gnome/gnc-currency-edit.c: remove consts from
-	gnc_commoditities (after consultation with Bill).
+	gnc_commodities (after consultation with Bill).
 
 	* src/gnome/gnc-commodity-edit.h: remove consts from
-	gnc_commoditities (after consultation with Bill).
+	gnc_commodities (after consultation with Bill).
 
 	* src/gnome/gnc-commodity-edit.c: remove consts from
-	gnc_commoditities (after consultation with Bill).
+	gnc_commodities (after consultation with Bill).
 
 	* src/gnome/druid-commodity.c: remove consts from
-	gnc_commoditities (after consultation with Bill).
+	gnc_commodities (after consultation with Bill).
 
-	* src/gnome/dialog-account.c: remove consts from gnc_commoditities
+	* src/gnome/dialog-account.c: remove consts from gnc_commodities
 	(after consultation with Bill).
 
-	* src/gnome/dialog-options.c: remove consts from gnc_commoditities
+	* src/gnome/dialog-options.c: remove consts from gnc_commodities
 	(after consultation with Bill).
 
 	* src/gnome/dialog-commodity.h: remove consts from
-	gnc_commoditities (after consultation with Bill).
+	gnc_commodities (after consultation with Bill).
 
 	* src/gnome/dialog-commodity.c: remove consts from
-	gnc_commoditities (after consultation with Bill).
+	gnc_commodities (after consultation with Bill).
 
-	* src/gnc-ui-util.h: remove consts from gnc_commoditities (after
+	* src/gnc-ui-util.h: remove consts from gnc_commodities (after
 	consultation with Bill).
 
-	* src/gnc-ui-util.c: remove consts from gnc_commoditities (after
+	* src/gnc-ui-util.c: remove consts from gnc_commodities (after
 	consultation with Bill).
 
-	* src/engine/Transaction.h: remove consts from gnc_commoditities
+	* src/engine/Transaction.h: remove consts from gnc_commodities
 	(after consultation with Bill).
 
-	* src/engine/Transaction.c: remove consts from gnc_commoditities
+	* src/engine/Transaction.c: remove consts from gnc_commodities
 	(after consultation with Bill).
 
-	* src/engine/Scrub.c: remove consts from gnc_commoditities (after
+	* src/engine/Scrub.c: remove consts from gnc_commodities (after
 	consultation with Bill).
 
-	* src/AccountP.h: remove consts from gnc_commoditities (after
+	* src/AccountP.h: remove consts from gnc_commodities (after
 	consultation with Bill).
 
-	* src/Account.h: remove consts from gnc_commoditities (after
+	* src/Account.h: remove consts from gnc_commodities (after
 	consultation with Bill).
 
-	* src/Account.c: remove consts from gnc_commoditities (after
+	* src/Account.c: remove consts from gnc_commodities (after
 	consultation with Bill).
 
-	* src/SplitLedger.c: remove consts from gnc_commoditities (after
+	* src/SplitLedger.c: remove consts from gnc_commodities (after
 	consultation with Bill).
 
-	* src/EuroUtils.h: remove consts from gnc_commoditities (after
+	* src/EuroUtils.h: remove consts from gnc_commodities (after
 	consultation with Bill).
 
-	* src/EuroUtils.c: remove consts from gnc_commoditities (after
+	* src/EuroUtils.c: remove consts from gnc_commodities (after
 	consultation with Bill).
 
 2001-02-23  Bill Gribble  <grib@billgribble.com>
@@ -8757,7 +8757,7 @@
 	* src/engine/gnc-numeric.{c,h}, src/scm/gnc-numeric.scm: add
 	support for a new auto-denom type, GNC_DENOM_SIGFIGS(x), where x
 	is the number of "significant figures" you want in the output.
-	This means that the output denominator will always be a poewr of
+	This means that the output denominator will always be a power of
 	10, but which power is determined by the magnitude of the
 	argument.
 
@@ -9076,7 +9076,7 @@
 	1.3.4 doesn't have), and maybe even Dave's ugly memory issues.
 
 	* src/scm/report/average-balance.scm: new g-wrap fix.
-	Essentially all of these g-wrap fixes are to accomodate the new
+	Essentially all of these g-wrap fixes are to accommodate the new
 	type names and visible bindings for g-wrapped non-native types.
 	Where we had <gw:wct-void*> we now have <gw:void*>.  This naming
 	convention has been applied unilaterally, even for native types,
@@ -9173,7 +9173,7 @@
 	* src/scm/report.scm: rename report objects; now the thing that
 	gets created by define-report is a <report-template> and the thing
 	that has a window and a set of parameters is a <report>.  Add a
-	"style sheet" option automatcally to EVERY report, and a "General"
+	"style sheet" option automatically to EVERY report, and a "General"
 	section to put it in; report with only 1 page of options should
 	use "General".  Add false-if-exception error catching to report
 	run.

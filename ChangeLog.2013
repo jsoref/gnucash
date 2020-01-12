@@ -24,7 +24,7 @@
 
 2013-12-28 Mike Evans 
 
-	* Update Amercan -> British translations.
+	* Update American -> British translations.
 
 2013-12-27 Geert Janssens 
 
@@ -592,7 +592,7 @@
 
 2013-11-21 Frank H. Ellenberger 
 
-	* Fix a few doxygen errors and wanrnings.
+	* Fix a few doxygen errors and warnings.
 
 2013-11-21 Geert Janssens 
 
@@ -720,7 +720,7 @@
 
 2013-11-08 Mike Alexander 
 
-	* Handle multi-currency transactions in registers without a default currency. Editing a multi-currency transaction in a serach results register sometimes sets the exchange rate to 1 instead of the value you want.
+	* Handle multi-currency transactions in registers without a default currency. Editing a multi-currency transaction in a search results register sometimes sets the exchange rate to 1 instead of the value you want.
 
 2013-11-05 Christian Stimming 
 
@@ -1012,7 +1012,7 @@
 
 2013-10-20 Mike Alexander 
 
-	* Use ";" as seperator characer since that's what g_key_file_get_keys wants.
+	* Use ";" as separator character since that's what g_key_file_get_keys wants.
 
 2013-10-20 Mike Alexander 
 
@@ -1528,7 +1528,7 @@
 
 2013-09-12 John Ralls 
 
-	* Bug 684670 - Interest amount calculation is wrong in Sqllite3 format
+	* Bug 684670 - Interest amount calculation is wrong in Sqlite3 format
 
 2013-09-09 John Ralls 
 
@@ -1568,7 +1568,7 @@
 
 2013-08-22 Cristian Marchi 
 
-	* Revert Persian translation update while Persion translators coordinates the translation effort.
+	* Revert Persian translation update while Persian translators coordinates the translation effort.
 
 2013-08-20 Cristian Marchi 
 
@@ -2320,7 +2320,7 @@
 
 2013-04-18 Christian Stimming 
 
-	* String improvements: For singular form of ngettest, the %d conversion specifier can be skipped.
+	* String improvements: For singular form of ngettext, the %d conversion specifier can be skipped.
 
 2013-04-17 Christian Stimming 
 
@@ -2404,7 +2404,7 @@
 
 2013-04-07 John Ralls 
 
-	* Register rewrite Update, fixes for duplicate and reversing transaction. This update fixes duplicate transaction and reversing transaction. Also included is a minor change to the model, added the test for unbalanced transaction along with some other dialogs. Tab key navigation has been revised but still further work. Account key seperator works along with new account creation. Author: Robert Fewell
+	* Register rewrite Update, fixes for duplicate and reversing transaction. This update fixes duplicate transaction and reversing transaction. Also included is a minor change to the model, added the test for unbalanced transaction along with some other dialogs. Tab key navigation has been revised but still further work. Account key separator works along with new account creation. Author: Robert Fewell
 
 2013-04-07 Christian Stimming 
 
@@ -2468,7 +2468,7 @@
 
 2013-03-31 John Ralls 
 
-	* Add libgncmod-ledger-core to satsify dependency in libgncmod-gnome.
+	* Add libgncmod-ledger-core to satisfy dependency in libgncmod-gnome.
 
 2013-03-31 John Ralls 
 
@@ -2600,7 +2600,7 @@
 
 2013-02-23 Mike Evans 
 
-	* Normalise line endings of min.js files.
+	* Normalize line endings of min.js files.
 
 2013-02-22 Geert Janssens 
 
@@ -2712,7 +2712,7 @@
 
 2013-02-04 Mike Alexander 
 
-	* Use gnc-commodity-equiv to compare commodites, not equal?
+	* Use gnc-commodity-equiv to compare commodities, not equal?
 
 2013-02-04 Mike Alexander 
 

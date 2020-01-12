@@ -58,7 +58,7 @@
 2003-11-28  David Hampton  <hampton@employees.org>
 
 	* src/engine/gnc-commodity.c: Clarify variable names in data
-	strutures.  Promote the commodity namespace to a externally
+	structures.  Promote the commodity namespace to a externally
 	visible opaque object.  Make commodities and namespaces Qof
 	Instances.  Add more events related to commodities and namespaces.
 	Require the book when creating a new commodity.
@@ -1068,7 +1068,7 @@
 	* src/gnome-utils/Makefile.am:
 	* src/import-export/qif-import/Makefile.am:
 
-	* src/gnome-utils/gnc-dense-cal.c: Fix some Gtk 2 incompatibilty problems.
+	* src/gnome-utils/gnc-dense-cal.c: Fix some Gtk 2 incompatibility problems.
         (gnc_dense_cal_class_init), (gnc_dense_cal_init):
 
 	Create a new tip of the day dialog.
@@ -1890,8 +1890,8 @@
 	* src/register/register-gnome/gnucash-item-list
 	* src/register/register-gnome/gnucash-sheet.c
 
-	  In the following, use the 2.0 compatability function
-	  gdk_font_from_description instead of the 2.2 compatability function
+	  In the following, use the 2.0 compatibility function
+	  gdk_font_from_description instead of the 2.2 compatibility function
 	  gdk_font_from_description_for_display to correct error in 13th batch.
 	  Replace deprecated:
     	  gtk_editable_claim_selection( GTK_EDITABLE by
@@ -2072,7 +2072,7 @@
 	  Replace deprecated gnome_stock_new_with_icon, gnome_pixmap_button
 	  by gtk_button_new_from_stock
 	* src/gnome-utils/gnc-date-edit.c: select_clicked:
-	  Remove inactivated block referencing deprecated gnome_stock_cursor_new
+	  Remove inactivate block referencing deprecated gnome_stock_cursor_new
 
 
 2003-04-26 TomF changes for gnucash-gnome2-dev, 11th batch
@@ -2095,7 +2095,7 @@
 	  Replace deprecated gnome_stock_new_with_icon, gnome_pixmap_button
 	  by gtk_button_new_from_stock
 	* src/gnome-utils/gnc-date-edit.c: select_clicked:
-	  Remove inactivated block referencing deprecated gnome_stock_cursor_new
+	  Remove inactivate block referencing deprecated gnome_stock_cursor_new
 
 
 2003-04-02 TomF changes for gnucash-gnome2-dev, 10th batch
@@ -2387,7 +2387,7 @@
 	* src/import-export/hbci/hbci-interaction.c,
 	gnc-hbci-getbalance.c, dialog-hbcitrans.c: Improved user messages.
 
-	* src/import-export/hbci/gnc-hbci-utils.c: Fixed extremly stupid,
+	* src/import-export/hbci/gnc-hbci-utils.c: Fixed extremely stupid,
 	old bug that causes weird HBCI errors.
 
 2003-10-18  Christian Stimming  <stimming@tuhh.de>
@@ -2498,7 +2498,7 @@
 2003-08-29  David Hampton  <hampton@employees.org>
 
 	* src/engine/Account.c: Fix bug in computing cleared balance.  The
-	bug was introdiced 4/1.
+	bug was introduced 4/1.
 
 	* lots of scm files: Remove the RCS "Id:" tag.  Its a PITA when
 	syncing between branches.
@@ -2520,7 +2520,7 @@
 2003-08-13  Matt Vanecek   <mevanecek@yahoo.com>
 
     * src/backend/postgres/PostgresBackend.c pgend_session_begin():
-      Moved the pgendUpdgradeDB() call outside of the SQL transaction,
+      Moved the pgendUpgradeDB() call outside of the SQL transaction,
       because the upgrades performed each have their own separate
       transaction.
 
@@ -2539,7 +2539,7 @@
       of regression testing:
     - add_multiple_book_support():  Removed the "NOT NULL" from the
       ADD COLUMN statements, and placed them in an ALTER TABLE...SET
-      NULL construct.  The original is not supported in Postgresql
+      NULL construct.  The original is not supported in PostgreSQL
       and fails to execute.
     - Changed the stpcpy() to use g_strdup_printf() instead, for dynamic
       query assembly.
@@ -2703,7 +2703,7 @@
       pgendBookRestore() to reflect its functionality of restoring
       the book's data to the engine.
     * src/backend/postgres/price.c: In pgendPriceFind(), couched the
-      currenct portion of the SQL statement in an "if" statement,
+      currency portion of the SQL statement in an "if" statement,
       because gnc_pricedb_lookup_latest_any_currency() can pass in
       a NULL currency, and stpcpy() doesn't like NULLs.
     * src/backend/postgres/escape.c: enhanced debug messages.
@@ -2764,7 +2764,7 @@
 2003-07-16  Derek Atkins  <derek@ihtfp.com>
 
 	* src/business/business-core/gncInvoice.c: change the description
-	  and action of Invoice and Payement Transactions/Splits, to make
+	  and action of Invoice and Payment Transactions/Splits, to make
 	  it easier to print a check off the posted transactions.
 
 	* src/report/standard-reports/cash-flow.scm: fix some labels and
@@ -2864,7 +2864,7 @@
 	src/import-export/hbci/dialog-hbcitrans.c: Change HBCI online
 	transfer action so that first the gnucash Transaction is created
 	and only after that the HBCI connection is started. Necessary for
-	later implementation of offline queueing and multi-job execution.
+	later implementation of offline queuing and multi-job execution.
 
 2003-07-01  David Hampton  <hampton@employees.org>
 
@@ -2886,7 +2886,7 @@
 
 	* src/backend/file/gnc-account-xml-v2.c:
 	* src/backend/file/gnc-commodity-xml-v2.c:
-	* src/engine/Scrub.c: Ensure backwards compatability of the XML file.
+	* src/engine/Scrub.c: Ensure backwards compatibility of the XML file.
 
 	* src/app-utils/gnc-helpers.c: Update for changes in accessing
 	quote source information.
@@ -3003,7 +3003,7 @@
 
 	* src/gnome-utils/dialog-commodity.c:
 	* src/gnome-utils/dialog-utils.[ch]: Consolidate a couple of
-	functions into the only file where they areused.
+	functions into the only file where they are used.
 
 2003-06-25  Derek Atkins  <derek@ihtfp.com>
 
@@ -3211,7 +3211,7 @@
 
 	* src/engine/QueryCore.[ch]: create a new GUID_MATCH_LIST_ANY
 	  match-type, which can eventually be used to make an AccountGroup
-	  comparrison (once we figure out how to label an account group with
+	  comparison (once we figure out how to label an account group with
 	  a GUID)
 	* src/engine/QueryNew.c: print out GUID_MATCH_LIST_ANY query terms
 	* src/engine/gw-engine-spec.scm: wrap GUID_MATCH_LIST_ANY
@@ -3327,7 +3327,7 @@
 	* src/gnome-utils/gnc-date-format.*: Create a new "date format"
 	  widget to let the user choose a date format (and see the results
 	  of what the date would look like).
-	* src/gnome-utils/Makedile.am: add gnc-date-format files to the build
+	* src/gnome-utils/Makefile.am: add gnc-date-format files to the build
 	* src/gnome/dialog-print-check.c: use the new date-format widget
 	* src/gnome/glade/print.glade: remove data that is now part of the
 	  date-format widget.
@@ -3427,7 +3427,7 @@
 	* src/business/business-ledger/gncEntryLedger.c: fix a bug where
 	  if you unpost an invoice and don't bring the TaxTables up to
 	  date, the total value shown in the register is different
-	  dependending on whether the cursor is on the current line or
+	  depending on whether the cursor is on the current line or
 	  not.
 
 	* src/business/business-core/gncInvoice.[ch]: change the unpost
@@ -3594,7 +3594,7 @@
 	  Supply a start date (as well as an end date) and don't print
 	  invoices that occur prior to the start date or after the end date.
 	  The aging information ignores the start date, but not the end date.
-	  This means the aging information will always be acurate through the
+	  This means the aging information will always be accurate through the
 	  end date (even if all the invoices and payments are not displayed).
 	  Fixes #108731.
 
@@ -3628,7 +3628,7 @@
 	  querylist dialog to display the due bills
 	* src/business/business-gnome/dialog-invoice.[ch]: create a new
 	  API to run a due-bills dialog.
-	* src/business/businss-gnome/gw-business-gnome-spec.scm: wrap the
+	* src/business/business-gnome/gw-business-gnome-spec.scm: wrap the
 	  new due-bills api
 	* src/engine/gnc-book.c: forcibly signal a book destroy event
 
@@ -3688,7 +3688,7 @@
 	  as an ABS and invert the sort (defaults to off).  Add methods to
 	  determine if an item is in the list, and one to refresh the display
 	  of an item.
-	* src/gnome-utils/search-param.[ch]: fix the spelling of resizeable
+	* src/gnome-utils/search-param.[ch]: fix the spelling of resizable
 
 	* src/gnome-utils/gnc-query-list.c: we can't use a reversed list
 	  and prepend() because then we're always adding row 0 so the
@@ -3765,7 +3765,7 @@
 	* src/gnome-utils/dialog-utils.c:
 	* src/gnome-utils/dialog-utils.h: Migrate fields and functions
 	related to price quotes from the account to the commodity.  Fixed
-	the original complatint in #104197 as part of these changes.
+	the original complaint in #104197 as part of these changes.
 
 	* src/backend/file/io-gncxml-v2.c:
 	* src/engine/Scrub.c:
@@ -4301,7 +4301,7 @@
 	* src/import-export/import-backend.c:
 	* src/import-export/import-match-map.c:
 	* src/import-export/import-match-map.h:
-	  Chris Morgan's Baysian Matching code, to match transactions
+	  Chris Morgan's Bayesian Matching code, to match transactions
 	  based on Bayesian filtering of previously matched transactions.
 
 	* src/business/business-ledger/gncEntryLedger.c: allow the user
@@ -4485,7 +4485,7 @@
 
 	* src/quotes/dump-finance-quote: Do a runtime check for
 	Finance::Quote instead of including the perl 'use' declaration.
-	The latter causes RPM to add a dependancy on F::Q.
+	The latter causes RPM to add a dependency on F::Q.
 
 2003-02-13  Derek Atkins  <derek@ihtfp.com>
 
@@ -4670,8 +4670,8 @@
 
 2003-02-01  Benoit Grégoire  <bock@step.polymtl.ca>
 
-	* src/import-export/gnc-ofx-import.c: No longer assume that transaction with type OFX_OTHER are investement transactions.  Fixes bug reported by Rik harris.
-	* src/import-export/import-main-matcher.c: Fix unrelated display bug with balanced (typically investement) transactions.
+	* src/import-export/gnc-ofx-import.c: No longer assume that transaction with type OFX_OTHER are investment transactions.  Fixes bug reported by Rik harris.
+	* src/import-export/import-main-matcher.c: Fix unrelated display bug with balanced (typically investment) transactions.
 
 2003-02-02  Christian Stimming  <stimming@tuhh.de>
 
@@ -4693,7 +4693,7 @@
 	This hopefully permanently closes
 	https://bugs.gnucash.org/show_bug.cgi?id=101705.
 
-	* src/import-export/Makefile.am: No longuer compile Christian's
+	* src/import-export/Makefile.am: No longer compile Christian's
 	old matcher.
 
 2003-02-01  Christian Stimming  <stimming@tuhh.de>
@@ -4717,9 +4717,9 @@
 	* src/backend/postgres/PostgresBackend.c (pgendEnable):
 	Added ENTER/LEAVE statements
 
-	* src/backend/postgres/escape.c: Adde gnc-engine-util.h,
+	* src/backend/postgres/escape.c: Added gnc-engine-util.h,
 	  and "module = MOD_BACKEND"
-	- (sqlEscape_destroy): Added ENTER/LEAVE statemtents.
+	- (sqlEscape_destroy): Added ENTER/LEAVE statements.
 
 	* src/backend/postgres/gncquery.c (sql_Query_destroy): Added
 	ENTER/LEAVE statements.
@@ -4888,7 +4888,7 @@
 2003-01-27  Derek Atkins  <derek@ihtfp.com>
 
 	* configure.in -- don't assume gtkhtml is avail from gnome-config
-	  when testing for zvt.  Use the (already aquired) $GTKHTML_LIBS
+	  when testing for zvt.  Use the (already acquired) $GTKHTML_LIBS
 	  instead.  Fixes Stan's problem from gc-devel.
 
 2003-01-27  Christian Stimming  <stimming@tuhh.de>
@@ -4904,7 +4904,7 @@
 
 	* src/engine/SchedXaction.c (xaccSchedXactionGetNextInstance):
 	Remove the validity check on the temporal-state-data's notion of
-	the last-occurance date; as invalidity means something important,
+	the last-occurrence date; as invalidity means something important,
 	we must let it through; fixes Bug#103955.
 
 	* src/backend/file/gnc-schedxaction-xml-v2.c
@@ -5069,7 +5069,7 @@
 	  both numbers to the lcd and then operate on them, instead of
 	  assuming that a "cross-multiply" is safe.
 	* src/app-utils/test/test-print-parse-amount.c -- add more tests for
-	  PrintAmountInternal by checking force_fit and round.  Excercises
+	  PrintAmountInternal by checking force_fit and round.  Exercises
 	  a bug (fixed in this patch) where cross-multiplies were NOT safe.
 
 	* src/gnome-search/dialog-search.c -- reset the search-type to
@@ -5094,7 +5094,7 @@
 	  new global preferences: "Notify Bills Due?" and "Bills Due Days"
 	* src/business/business-gnome/business-gnome.scm -- create a dialog
 	  are runtime (and via a new menu item) that displays all the bills
-	  that are due withing "Bills Due Days" days from now.  It's ugly,
+	  that are due within "Bills Due Days" days from now.  It's ugly,
 	  but it's functional.  Fixes #102439.
 
 	* configure.in -- scrub the CFLAGS for postgres, as per Roland Roberts'
@@ -5546,7 +5546,7 @@
 	The side effect it that any transaction outside a 25 day
 	range can't be matched at all.
 	-Disable skipping transactions which already have an online id
-	during matching, untill a fix for the "transfer between two
+	during matching, until a fix for the "transfer between two
 	accounts" bug is properly fixed.
 	* src/import-export/generic-import.scm:
 	* src/import-export/import-settings.c:
@@ -5575,7 +5575,7 @@
 
 	* src/backend/file/io-example-account.[ch]: add a flag that signifies
 	  that an account-tree should NOT be included by "select-all"
-	* src/gnome/druid-hierachy.c: ignore account-trees that are
+	* src/gnome/druid-hierarchy.c: ignore account-trees that are
 	  marked for exclusion from "select-all".
 	* accounts/C/acctchrt_business.gnucash-xea: mark this account as
 	  "excluded from select-all"
@@ -5619,7 +5619,7 @@
 	* src/app-utils/prefs.scm: Create a 'file compression' option and
 	pass the data into the backend.
 
-2003-01-04  Derek Atkkins  <derek@ihtfp.com>
+2003-01-04  Derek Atkins  <derek@ihtfp.com>
 
 	* add a set of business accounts to the setup druid
 	* fix the full and common accounts to remove the (wrong) "Accounts Payable"
@@ -5697,14 +5697,14 @@
 
 	* src/report/report-system/options-utilities.scm:
 	* src/report/report-system/report-system.scm: Add new option for
-	specifying sort critera for piecharts and barcharts.
+	specifying sort criteria for piecharts and barcharts.
 
 	* src/report/standard-reports/account-piecharts.scm: Add various
 	sorting options.  Work around Guppi problem by replacing the
 	character "&" with the word "and".
 
 	* src/report/standard-reports/category-barchart.scm: Add various
-	sorting options. The default is now by ammount instead of by
+	sorting options. The default is now by amount instead of by
 	account-code, which is a much more interesting report.  #102342
 	Work around Guppi problem by replacing the character "&" with the
 	word "and".  Don't "reverse" the barchart legend.  Double-clicking
@@ -5791,7 +5791,7 @@
 	* src/business/business-gnome/dialog-order.c: use new set_readonly() API
 	FIXES BUG #101452
 
-	* configure.in: add a blatent warning that the RPC code is broke!
+	* configure.in: add a blatant warning that the RPC code is broke!
 	* src/scm/command-line.scm: change the message to let people know that
 	  the rpc-server command-line option only works if gnucash was compiled
 	  with rpc enabled.

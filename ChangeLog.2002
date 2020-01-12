@@ -16,7 +16,7 @@
 	and LEAVE statements to more of the functions.
 
 	* src/backend/postgres/upgrade.c: Changed all the DATETIME
-	SQL data types to TIMESTAMP.  DATETIME will not be in Postgresql
+	SQL data types to TIMESTAMP.  DATETIME will not be in PostgreSQL
 	as of 7.3.
 
 	* src/backend/postgres/functions.sql: Changed all the DATETIME
@@ -927,7 +927,7 @@ v	  fix the print_info
 2002-11-30  Herbert Thoma  <herbie@hthoma.de>
 
 	* src/report/standard-reports/cash-flow.scm: Added new option
-	for output formating, make the output "nicer"
+	for output formatting, make the output "nicer"
 
 2002-11-30  Christian Stimming  <stimming@tuhh.de>
 
@@ -1012,7 +1012,7 @@ v	  fix the print_info
 
 2002-11-27  Christian Stimming  <stimming@tuhh.de>
 
-	* accounts/pt_BR/*: Added Brazilian Portugese account templates by
+	* accounts/pt_BR/*: Added Brazilian Portuguese account templates by
 	Lucimar Moresco <lucimarmoresco@hotmail.com>.
 
 2002-11-27  Derek Atkins  <derek@ihtfp.com>
@@ -2109,7 +2109,7 @@ v	  fix the print_info
 	* app-utils/options.scm -- fix (find-first-account) to search subaccounts
 
 2002-10-20  Benoit Grégoire  <bock@step.polymtl.ca>
-	* src/import-export/Trasaction-matcher.c: Fix compiler warnings.
+	* src/import-export/Transaction-matcher.c: Fix compiler warnings.
 	* src/import-export/ofx/gnc-ofx-import.c: Give the user more information
 	  for account creation.
 
@@ -2216,7 +2216,7 @@ v	  fix the print_info
 	* add a 'modality' flag to the gnc-account-sel (which new-account API)
 	  so that the new-account-window can be called using the modal dialog
 	  interfaces.
-	* use the GNCAccoutSel in the date-close dialog (fixes bug #94973)
+	* use the GNCAccountSel in the date-close dialog (fixes bug #94973)
 
 	* create search-reconciled.[ch] to implement searches by reconcile flag
 	* gnome-search/search-core-type.c: hook in "reconciled" type,
@@ -4225,9 +4225,9 @@ v	  fix the print_info
 	* src/gnc-ui.h:
 	* src/app-file/gnc-file.c:
 	* src/app-utils/option-util.c:
-	* src/busiuness/business-gnome/dialog-date-close.c:
-	* src/busiuness/business-gnome/dialog-order.c:
-	* src/busiuness/business-ledger/gncEntryLedgerControl.c:
+	* src/business/business-gnome/dialog-date-close.c:
+	* src/business/business-gnome/dialog-order.c:
+	* src/business/business-ledger/gncEntryLedgerControl.c:
 	* src/gnome/dialog-commodities.c:
 	* src/gnome/dialog-price-editor.c:
 	* src/gnome/dialog-scheduledxaction.c:
