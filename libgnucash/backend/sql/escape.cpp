@@ -1,5 +1,5 @@
 /********************************************************************\
- * escape.c : escape SQL reserved characters                        *
+ * escape.cpp : escape SQL reserved characters                      *
  * Copyright (C) 2001 Linas Vepstas <linas@linas.org>               *
  *                                                                  *
  * This program is free software; you can redistribute it and/or    *
@@ -22,7 +22,7 @@
 
 /*
  * FILE:
- * escape.c
+ * escape.cpp
  *
  * FUNCTION:
  * Escapes the ' and \ characters in a string
